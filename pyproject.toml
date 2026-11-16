@@ -129,6 +129,10 @@ module = [
   "torch", "torch.*", "triton", "triton.*",
   "nvidia", "nvidia.*",
   "specialist_description", "specialist_description.*",
+  # Optional official simulator used by the local demonstration script.
+  "specialist_sim", "specialist_sim.*",
+  # Optional plotting tools declared by the mamba learning environment.
+  "matplotlib", "matplotlib.*",
 ]
 ignore_missing_imports = true
 

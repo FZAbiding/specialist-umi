@@ -1,0 +1,35 @@
+{
+  "version": "v2026.11.16.rc.2",
+  "checked_at": "2026-11-16T17:21:15+08:00",
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 4090",
+    "memory.total [MiB]": "24564 MiB",
+    "memory.free [MiB]": "22755 MiB",
+    "memory.used [MiB]": "1318 MiB"
+  },
+  "default_flow_min_free_bytes": 8589934592,
+  "targeted_test": {
+    "command": "mamba run -n specialist-umi python -m pytest -q tests/unit/vi_ba/test_dis_parallel.py::test_gpu_flow_tracks_cv2_dis",
+    "summary": "1 passed, 14 warnings in 5.66s",
+    "status": "passed",
+    "threshold_overridden": false,
+    "gpu_snapshot": {
+      "name": "NVIDIA GeForce RTX 4090",
+      "memory.total [MiB]": "24564 MiB",
+      "memory.free [MiB]": "22755 MiB",
+      "memory.used [MiB]": "1318 MiB"
+    },
+    "checked_at": "2026-11-16T17:21:15+08:00",
+    "log": "logs/setup/gpu-recheck/flow-test.log"
+  },
+  "complete_suite": {
+    "command": "mamba run -n specialist-umi python -m pytest -q tests packages",
+    "summary": "371 passed, 14 warnings in 14.06s",
+    "status": "passed",
+    "checked_at": "2026-11-16T17:21:15+08:00",
+    "log": "logs/setup/gpu-recheck/core-tests.log",
+    "gpu_flow_default_threshold_bytes": 8589934592,
+    "threshold_overridden": false
+  },
+  "production_code_changed": false
+}

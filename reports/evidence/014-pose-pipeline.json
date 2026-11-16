@@ -1,0 +1,235 @@
+{
+  "version": "v2026.11.16.rc.4",
+  "scope": "014 only; 013 archived and no further solve",
+  "hand": "right",
+  "camera_slots": [
+    "cam00"
+  ],
+  "gripper_tag_ids": {
+    "base": 2003,
+    "left_finger": 2004,
+    "right_finger": 2005
+  },
+  "anchor_ids": [
+    0,
+    1
+  ],
+  "anchor_size_m": 0.1,
+  "gripper_tag_size_m": 0.01,
+  "raw_compliance": {
+    "container_video_imu_calibration": "passed",
+    "gripper_discovery_against_urdf": "passed",
+    "start_hold": "passed",
+    "end_tap_on_untrimmed": "failed at 83%; original failure retained",
+    "training_episode_quality": "not certified; no external ground truth or task-success validation"
+  },
+  "estimate": {
+    "run": {
+      "anchor_move_rotation": [
+        0.03992064704961347
+      ],
+      "anchor_move_translation": [
+        0.045977787826355074
+      ],
+      "cross_camera_obs": [
+        0
+      ],
+      "estimated_at": [
+        "2026-11-16T12:09:19+00:00"
+      ],
+      "final_graph_error": [
+        433905.69498496276
+      ],
+      "git_sha": [
+        "da29719cdbaa366df0599984068ad4553d9cc86d"
+      ],
+      "initial_graph_error": [
+        154561879.8574459
+      ],
+      "rerun_version": [
+        "0.42.0"
+      ],
+      "solver_iterations": [
+        17
+      ],
+      "worst_rmse": [
+        2.0788043378312713
+      ]
+    },
+    "camera_fit": {
+      "anchor_obs": [
+        502
+      ],
+      "base_tag_id": [
+        2003
+      ],
+      "front_rmse": [
+        2.0788043378312713
+      ],
+      "n_keyframes": [
+        573
+      ],
+      "seat_anchor_obs": [
+        15
+      ],
+      "seat_cross_obs": [
+        0
+      ],
+      "seat_rotation": [
+        -0.017119309977358842,
+        0.11303289330766346,
+        0.00031302025101606016
+      ]
+    },
+    "highrate_rows": 57155,
+    "time_first_s": 0.000650999,
+    "time_last_s": 57.256652
+  },
+  "curation": {
+    "method": "official convert --duration 50 into separate derived base; full estimate reused through explicit --estimate",
+    "original_raw_and_base_preserved": true,
+    "original_video_duration_s": 57.3573,
+    "derived_base_requested_duration_s": 50.0,
+    "start_hold_end_s": 2.08731,
+    "detected_tap_s": 47.675391,
+    "margin_s": 1.0,
+    "usable_window_s": [
+      3.08731,
+      46.675391
+    ],
+    "state_first_last_s": [
+      3.09,
+      46.67
+    ],
+    "note": "clip-specific curation; no detector thresholds disabled; poses solved over full capture, filtered state uses curated base"
+  },
+  "state": {
+    "path": "/home/xense/src/specialist-umi/logs/014-processing/window50/state_s8_r100/20261116_192018_IAQEB2604VWWN7.rrd",
+    "bytes": 62194552,
+    "hands": {
+      "right": {
+        "rows": 4359,
+        "first_s": 3.09,
+        "last_s": 46.67,
+        "median_state_hz": 100.00000000000213,
+        "images": 1306,
+        "position_min_m": [
+          0.4650977849960327,
+          0.15530404448509216,
+          -0.9788885116577148
+        ],
+        "position_max_m": [
+          0.9202585816383362,
+          0.7151628136634827,
+          -0.2006087452173233
+        ],
+        "opening_min_rad": -0.14478911390056076,
+        "opening_max_rad": 0.3517743096685546,
+        "max_quaternion_norm_error": 4.0935782763540374e-08,
+        "quaternion_order": "xyzw",
+        "pose_frame": "gripper base-tag in world"
+      }
+    },
+    "entities": [
+      "state/right",
+      "state/right/ang_vel",
+      "state/right/image",
+      "state/right/left_finger",
+      "state/right/lin_vel",
+      "state/right/opening",
+      "state/right/pose",
+      "state/right/right_finger",
+      "world"
+    ]
+  },
+  "pose_export": {
+    "source": "/home/xense/src/specialist-umi/logs/014-processing/window50/state_s8_r100/20261116_192018_IAQEB2604VWWN7.rrd",
+    "hand": "right",
+    "rows": 4359,
+    "first_s": 3.09,
+    "last_s": 46.67,
+    "rate_hz": 100.00000000000213,
+    "quaternion_order": "xyzw",
+    "position_unit": "m",
+    "opening_unit": "rad",
+    "world_frame": "reference anchor origin and horizontal heading, gravity Z-up",
+    "stored_pose": "world_T_base_tag",
+    "tcp_offset_in_base_tag_m": [
+      0.1095,
+      0.0,
+      -0.018
+    ],
+    "tcp_orientation": "axes parallel to base tag; not a robot TCP calibration",
+    "quaternion_max_norm_error": 4.0935782763540374e-08,
+    "csv": "/home/xense/src/specialist-umi/logs/014-processing/poses/right-poses.csv",
+    "npz": "/home/xense/src/specialist-umi/logs/014-processing/poses/right-poses.npz"
+  },
+  "export_validation": {
+    "status": "passed",
+    "rows": 4359,
+    "matrix_shape": [
+      4359,
+      4,
+      4
+    ],
+    "finite": true,
+    "rotation_determinant_max_error": 8.881784197001252e-16,
+    "quaternion_max_norm_error": 4.0935782763540374e-08,
+    "csv_columns": 18,
+    "time_first_s": 3.09,
+    "time_last_s": 46.67,
+    "base_tag_position_extent_m": [
+      0.45516079664230347,
+      0.5598587691783905,
+      0.7782797664403915
+    ],
+    "opening_range_rad": [
+      -0.14478911390056076,
+      0.3517743096685546
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "logs/real-capture-20261116/estimate/20261116_192018_IAQEB2604VWWN7.rrd",
+      "bytes": 22023842,
+      "sha256": "2b7fa5714e6a263230db0e680ab163b79f73bbb14413ac1952ae60b1bbdf1c44"
+    },
+    {
+      "path": "logs/real-capture-20261116/viz/20261116_192018_IAQEB2604VWWN7.rrd",
+      "bytes": 3631668,
+      "sha256": "4e1ae5e6deafc14d9510d188b5fd10245f282830312308b1b998330c6eac4e64"
+    },
+    {
+      "path": "logs/014-processing/window50/state_s8_r100/20261116_192018_IAQEB2604VWWN7.rrd",
+      "bytes": 62194552,
+      "sha256": "d41385feec432d32577839821e1b3a74684b26623184675d828c75e6ab769544"
+    },
+    {
+      "path": "logs/014-processing/poses/right-poses.csv",
+      "bytes": 1168211,
+      "sha256": "5c14872431ffa32898f3265955bb064cbe450f8aa980fa4e1d5e5f814cab8835"
+    },
+    {
+      "path": "logs/014-processing/poses/right-poses.npz",
+      "bytes": 1129874,
+      "sha256": "f5e340d5b1f7291323c14a53d33d5814f6dba8b273fcffa2dfc712f7509d5119"
+    }
+  ],
+  "checks": {
+    "mypy": "63 source files passed",
+    "ruff": "passed",
+    "format": "128 files formatted",
+    "shell": "process_014.sh syntax and cached replay passed"
+  },
+  "limitations": [
+    "No motion-capture ground truth; pixel reprojection RMSE is not metric pose accuracy",
+    "TCP translation uses official offset; exported TCP axes parallel to base tag, not robot tool calibration"
+  ],
+  "logs": [
+    "logs/014-processing/estimate-full.log",
+    "logs/014-processing/state-default.log",
+    "logs/014-processing/convert-window50.log",
+    "logs/014-processing/state-window50-retry.log",
+    "logs/014-processing/process-014.log"
+  ]
+}

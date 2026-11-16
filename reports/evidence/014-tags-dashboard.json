@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-16T22:01:09.897432+08:00",
+  "default_entrypoint": "bash scripts/view_014.sh",
+  "official_entrypoint": "bash scripts/view_014.sh --official",
+  "default_mode": "dashboard",
+  "opens_new_viewer_by_default": true,
+  "overlays": {
+    "source": "Official estimate: keyframe-indexed tag IDs and measured corners",
+    "timeline": "video_time",
+    "policy": "Latest keyframe held until next; empty detections explicitly clear boxes",
+    "rate_hz": 9.990009990010048,
+    "lenses": {
+      "front": {
+        "keyframes": 573,
+        "tag_counts": {
+          "0": 496,
+          "1": 380
+        }
+      },
+      "rear": {
+        "keyframes": 573,
+        "tag_counts": {
+          "1": 15,
+          "2003": 566,
+          "2004": 570,
+          "2005": 572
+        }
+      }
+    }
+  },
+  "validation": {
+    "status": "passed",
+    "lenses": {
+      "front": {
+        "keyframes": 573,
+        "corners_exact": true,
+        "labels_match_ids": true,
+        "timestamps_exact": true,
+        "empty_rows_clear_boxes_and_labels": true,
+        "empty_rows": 71,
+        "at_7_8078_s": [
+          "ID 0",
+          "ID 1"
+        ]
+      },
+      "rear": {
+        "keyframes": 573,
+        "corners_exact": true,
+        "labels_match_ids": true,
+        "timestamps_exact": true,
+        "empty_rows_clear_boxes_and_labels": true,
+        "empty_rows": 0,
+        "at_7_8078_s": [
+          "ID 2003",
+          "ID 2004",
+          "ID 2005"
+        ]
+      }
+    }
+  },
+  "screenshot": "logs/014-diagnostics/tag-dashboard.png",
+  "screenshot_time_s": 7.8078,
+  "sources": [
+    "scripts/make_capture_dashboard.py:tag_overlays,log_tags,dashboard",
+    "scripts/view_014.sh",
+    "src/specialist/vi_ba/viz.py:_send_lens_tag_columns,_camera_indexes"
+  ],
+  "limits": [
+    "Uses existing approximately 10 Hz keyframe detections, not new per-video-frame detections",
+    "Latest keyframe held until next; up to one keyframe interval displacement during motion",
+    "Raw official base/estimate/viz unchanged"
+  ]
+}

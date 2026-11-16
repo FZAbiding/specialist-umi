@@ -1,0 +1,124 @@
+[
+  {
+    "id": "S1",
+    "kind": "official-source",
+    "title": "Specialist 重建源码与当前 fork",
+    "url": "https://github.com/specialist-ai/specialist",
+    "local": "README.md; scripts/convert.py; scripts/state.py; src/specialist/loader/parse_insv.py",
+    "scope": "本地 checkout 优先于网页教程",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "S2",
+    "kind": "official-source",
+    "title": "specialist_sim 环境、episode、导出器",
+    "url": "https://github.com/specialist-ai/specialist_sim",
+    "local": "../specialist_sim/README.md; src/specialist_sim/episode.py",
+    "scope": "官方场景和 API；本地演示轨迹另行标识",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "S3",
+    "kind": "official-manual",
+    "title": "场景和采集手势",
+    "url": "https://specialist-ai.github.io/specialist-docs/scene/",
+    "scope": "标签尺寸、静止与敲击、音频同步",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "S4",
+    "kind": "official-manual",
+    "title": "手持夹爪装配",
+    "url": "https://specialist-ai.github.io/specialist-docs/handheld/",
+    "scope": "齿轮对齐、软指尖、标签尺寸",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "S5",
+    "kind": "official-manual",
+    "title": "电动夹爪装配",
+    "url": "https://specialist-ai.github.io/specialist-docs/actuated/",
+    "scope": "接线、12V供电；ID居中教程仍缺项",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "S6",
+    "kind": "official-source",
+    "title": "相机实时驱动",
+    "url": "https://github.com/specialist-ai/insta360_driver",
+    "scope": "Python API、USB/Android、SDK与格式限制",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "S7",
+    "kind": "official-source",
+    "title": "夹爪 SDK 与标定",
+    "url": "https://github.com/specialist-ai/specialist_sdk",
+    "scope": "开合弧度、断扭矩标定、无命令 watchdog",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "S8",
+    "kind": "official-source",
+    "title": "Feetech 驱动",
+    "url": "https://github.com/specialist-ai/feetech_driver",
+    "scope": "总线反馈读取；无实物验证",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "S9",
+    "kind": "manufacturer-manual",
+    "title": "X3 首次激活",
+    "url": "https://onlinemanual.insta360.com/x3/en-us/camera/firstuse/activation",
+    "scope": "X3 App 激活",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "S10",
+    "kind": "manufacturer-manual",
+    "title": "X3 存储卡兼容性",
+    "url": "https://onlinemanual.insta360.com/x3/en-us/specs/compatibility/storage",
+    "scope": "UHS-I、V30及以上、exFAT",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "S11",
+    "kind": "manufacturer-manual",
+    "title": "X3 拍摄参数",
+    "url": "https://onlinemanual.insta360.com/x3/en-us/camera/basicuse/parameter",
+    "scope": "360 5.7K30；不要套用其他X系列规格",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "D1",
+    "kind": "local-document-rule",
+    "title": "taccap-industrial 文档规范",
+    "local": "/home/xense/cad/taccap-industrial/AGENTS.md; docs/CODEX_WORKFLOW.md; docs/EVIDENCE_RULES.md",
+    "scope": "单一HTML主报告、证据分层、候选版、默认不导出PDF",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "R1",
+    "kind": "user-original-files-and-local-measurement",
+    "title": "X3真实两段录像与六文件分析",
+    "local": "reports/evidence/real-captures-20261116.json",
+    "scope": "原片哈希、ffprobe、完整解码、IMU与标定、标签抽样和base回读；无estimate/state",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "R2",
+    "kind": "user-provided-official-pdf",
+    "title": "三份官方装配/锚点PDF",
+    "local": "docs/reference/official/manifest.json",
+    "scope": "手持13页、电动19页、锚点2页；原件移动哈希一致；版本见PDF元数据",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "R3",
+    "kind": "local-real-pipeline-run",
+    "title": "014单右夹爪完整重建、state与位姿导出",
+    "local": "reports/evidence/014-pose-pipeline.json",
+    "scope": "完整原片求解；前50秒派生base复用完整轨迹；原始收尾不合规，未验证外部精度",
+    "checked": "2026-11-16"
+  }
+]

@@ -1,0 +1,184 @@
+{
+  "date": "2026-11-17",
+  "core_suite": {
+    "command": "mamba run -n specialist-umi pytest -q",
+    "summary": "384 passed, 14 warnings in 14.48s",
+    "status": "passed",
+    "log": "logs/learning-20261117/core-tests.log",
+    "gpu_flow_default_threshold_bytes": 8589934592,
+    "threshold_overridden": false
+  },
+  "sim_suite": {
+    "summary": "81 passed, 2 warnings in 13.44s",
+    "status": "passed"
+  },
+  "sdk_suite": {
+    "summary": "58 passed, 1 skipped in 0.76s",
+    "status": "passed-with-camera-skip"
+  },
+  "gpu_smoke": {
+    "status": "passed",
+    "details": "native MEI factor, torch CUDA, CuPy CUDA, cuDSS backend imports and CUDA sums; environment.json"
+  },
+  "small_flow_diagnostic": {
+    "status": "passed",
+    "limitation": "256x256 input only; process-local admission threshold 8→2 GiB; no production change",
+    "summary": "1 passed; 256x256 numerical equivalence diagnostic; threshold override only in diagnostic process",
+    "role": "historical diagnostic; superseded by default-threshold test"
+  },
+  "scripted_demo": {
+    "environment": "official specialist_sim PickPlace / Floating",
+    "controller": "local scripted trajectory; no trained policy",
+    "episode": "/home/xense/src/specialist-umi/logs/official-demo/episodes/pick-place-demo.npz",
+    "seed": 0,
+    "success": true,
+    "picked": true,
+    "unstable": false,
+    "max_tracking_error_m": 0.0001744154328397103,
+    "cube_start": [
+      0.07348974285758211,
+      -0.07784265105538583,
+      0.7154999999999999
+    ],
+    "cube_final": [
+      -3.5002993657979345e-05,
+      -9.945034818396353e-06,
+      0.7149994673254196
+    ],
+    "rows": 821
+  },
+  "state_readback": {
+    "status": "passed",
+    "per_hand_rows": 821,
+    "per_hand_images": 245,
+    "state_hz": 100,
+    "image_size": 360,
+    "supersample": 2
+  },
+  "lint": {
+    "ruff": "passed",
+    "format": "134 files formatted",
+    "mypy": "67 source files passed",
+    "bash_syntax": "passed"
+  },
+  "real_hardware": {
+    "camera_connected": false,
+    "servo_connected": false,
+    "real_insv_processed": true,
+    "udev_rule_installed": false,
+    "reason": "Six camera files provided via removable storage; no direct USB stream or servo motion test"
+  },
+  "report": {
+    "render": "passed v2026.11.17.rc.1; 38 figures; 390/1280 visual checks without problems",
+    "sheets_reviewed": 3,
+    "verifier": "passed: version, anchors, local links, evidence and figure captions",
+    "pdf_exported": false,
+    "renderer": "visual-explainer kit/render.mjs",
+    "browser": "existing newer Chromium cache via isolated PLAYWRIGHT_BROWSERS_PATH; legacy Chromium134 SVG checker incompatible",
+    "preview_scope": "Main and targeted action, AprilTag, calibration and plan excerpts rendered/reviewed; actual capture photos remain local"
+  },
+  "artifacts": [
+    {
+      "path": "logs/official-demo/episodes/pick-place-demo.npz",
+      "bytes": 193185,
+      "sha256": "34559506f479dc3140236d369c57d7a9f8a87568d01b97eb3ce1202c1a9860b3"
+    },
+    {
+      "path": "logs/official-demo/pick-place-demo.mp4",
+      "bytes": 371092,
+      "sha256": "504eedb419c8f91737a2a2614a1aa8ab0ba8030d7bfbd774d265f9b262613e4e"
+    },
+    {
+      "path": "logs/official-demo/dataset/state_s8_r100/pick-place-demo.rrd",
+      "bytes": 8854810,
+      "sha256": "fc5f1034d7a432e81878fe8df166da0751096a5c74da3e9b3d784700b7775070"
+    }
+  ],
+  "cli_help": {
+    "status": "passed",
+    "commands": [
+      "convert.py",
+      "estimate.py",
+      "state.py",
+      "imu.py",
+      "video_imu_timing.py",
+      "specialist-calibrate"
+    ]
+  },
+  "demo_wrapper": {
+    "status": "passed",
+    "command": "bash scripts/run_official_demo.sh",
+    "log": "logs/setup/demo-all.log"
+  },
+  "core_suite_history": [
+    {
+      "command": "mamba run -n specialist-umi python -m pytest -q tests packages",
+      "summary": "1 failed, 370 passed in 11.51s",
+      "status": "resource-blocked-one-test",
+      "limitation": "GPU flow admission requires 8 GiB free; other Python task occupies ~18 GiB; no other task stopped",
+      "role": "historical",
+      "log": "logs/setup/core-tests.log",
+      "superseded_by": "v2026.11.16.rc.2"
+    },
+    {
+      "command": "mamba run -n specialist-umi python -m pytest -q tests packages",
+      "summary": "371 passed, 14 warnings in 14.06s",
+      "status": "passed",
+      "checked_at": "2026-11-16T17:21:15+08:00",
+      "log": "logs/setup/gpu-recheck/core-tests.log",
+      "gpu_flow_default_threshold_bytes": 8589934592,
+      "threshold_overridden": false,
+      "role": "historical; superseded by local geometry additions on 2026-11-17"
+    }
+  ],
+  "gpu_flow_default_recheck": {
+    "command": "mamba run -n specialist-umi python -m pytest -q tests/unit/vi_ba/test_dis_parallel.py::test_gpu_flow_tracks_cv2_dis",
+    "summary": "1 passed, 14 warnings in 5.66s",
+    "status": "passed",
+    "threshold_overridden": false,
+    "gpu_snapshot": {
+      "name": "NVIDIA GeForce RTX 4090",
+      "memory.total [MiB]": "24564 MiB",
+      "memory.free [MiB]": "22755 MiB",
+      "memory.used [MiB]": "1318 MiB"
+    },
+    "checked_at": "2026-11-16T17:21:15+08:00",
+    "log": "logs/setup/gpu-recheck/flow-test.log"
+  },
+  "real_capture_files": {
+    "status": "analyzed-and-base-converted",
+    "file_count": 6,
+    "full_insv_decode_passed": 4,
+    "base_sessions": 2,
+    "estimate_run": true,
+    "state_run": true,
+    "tap_detector": "failed for both clips; strongest burst at 83%",
+    "evidence": "reports/evidence/real-captures-20261116.json",
+    "scope": "014 only; 013 archived"
+  },
+  "official_manuals": {
+    "status": "moved-unchanged-and-reviewed",
+    "files": 3,
+    "pages": 34,
+    "sha256_verified": true,
+    "text_extracted": true,
+    "page_images_reviewed": true,
+    "manifest": "docs/reference/official/manifest.json"
+  },
+  "014_pipeline": {
+    "status": "passed-with-explicit-curation",
+    "hand": "right",
+    "keyframes": 573,
+    "state_rows": 4359,
+    "images": 1306,
+    "state_rate_hz": 100,
+    "time_s": [
+      3.09,
+      46.67
+    ],
+    "front_reprojection_rmse_px": 2.0788043378312713,
+    "ground_truth_accuracy_validated": false,
+    "evidence": "reports/evidence/014-pose-pipeline.json",
+    "export_checks": "finite, monotonic timestamps, matrix orthogonality/determinant and CSV readback passed"
+  }
+}

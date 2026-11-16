@@ -1,0 +1,11 @@
+# Example only. Replace the port and ID after checking your own hardware.
+# This file intentionally has no fabricated calibration values.
+port: /dev/serial/by-id/REPLACE_WITH_YOUR_ADAPTER
+baud_rate: 1000000
+bus_rate_hz: 250
+calibration_file: gripper.calibration.yaml
+joints:
+  jaw:
+    id: 18
+    closed: -0.261799
+    open: 0.698132

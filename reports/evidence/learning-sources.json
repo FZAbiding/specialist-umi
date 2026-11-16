@@ -1,0 +1,57 @@
+{
+  "checked": "2026-11-17",
+  "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+  "sources": [
+    {
+      "name": "openpi-transforms.py",
+      "url": "https://raw.githubusercontent.com/Physical-Intelligence/openpi/main/src/openpi/transforms.py",
+      "sha256": "a1b94e9e72849a18834778f229c6bb389a495eb7fbe0aa800edea728b9424ff4"
+    },
+    {
+      "name": "openpi-config.py",
+      "url": "https://raw.githubusercontent.com/Physical-Intelligence/openpi/main/src/openpi/training/config.py",
+      "sha256": "c34231f888dba5dc981d808765b3d98775ab845b04313bf53fcecd567c520b0d"
+    },
+    {
+      "name": "openpi-readme.md",
+      "url": "https://raw.githubusercontent.com/Physical-Intelligence/openpi/main/README.md",
+      "sha256": "567fc57766bd736664f50126cab8145af4071ca16cc5e238f2b11e369169c3b5"
+    },
+    {
+      "name": "apriltag-readme.md",
+      "url": "https://raw.githubusercontent.com/AprilRobotics/apriltag/master/README.md",
+      "sha256": "a4a8a0994f012d31c9364af6d8fe454a2c10a14747434f08584815e1df7c88b2"
+    },
+    {
+      "name": "apriltag-family.c",
+      "url": "https://raw.githubusercontent.com/AprilRobotics/apriltag/master/tagStandard41h12.c",
+      "sha256": "ca181512b09a5f0b6aa4a03ccdd9c49b2e18976d69c10df26b93c3f9133b5971"
+    },
+    {
+      "name": "reports/assets/tag41_12_00000.png",
+      "url": "https://raw.githubusercontent.com/AprilRobotics/apriltag-imgs/master/tagStandard41h12/tag41_12_00000.png",
+      "sha256": "ad5bc161c157634f05afcfd3cfba34334b9303609dd3afc9c000b86e031da02a"
+    },
+    {
+      "name": "apriltag-decode.c",
+      "url": "https://raw.githubusercontent.com/AprilRobotics/apriltag/master/apriltag.c",
+      "sha256": "fb4980824105e4bdee3d8e505cdfcec780d51a64293cfd77995c8b0d84284c90"
+    },
+    {
+      "name": "apriltag-quads.c",
+      "url": "https://raw.githubusercontent.com/AprilRobotics/apriltag/master/apriltag_quad_thresh.c",
+      "sha256": "46717380a30aaca986a30ae925b6d81ff792924e744d99c34360f3f81aab945c"
+    },
+    {
+      "name": "apriltag-pose.c",
+      "url": "https://raw.githubusercontent.com/AprilRobotics/apriltag/master/apriltag_pose.c",
+      "sha256": "70ebc4557615f5ffe8b908c3d2d4b53428026170934e963ed353dd238b7b4e7e"
+    },
+    {
+      "name": "OpenCV calibration documentation",
+      "url": "https://docs.opencv.org/4.13.0/d9/d0c/group__calib3d.html",
+      "checked": "2026-11-17",
+      "purpose": "pinhole model, pixel intrinsics, multiview calibration, PnP"
+    }
+  ]
+}

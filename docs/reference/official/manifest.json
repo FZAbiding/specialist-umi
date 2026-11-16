@@ -1,0 +1,41 @@
+[
+  {
+    "original_name": "1.pdf",
+    "original_path": "/home/xense/src/specialist-umi/1.pdf",
+    "stored_path": "docs/reference/official/specialist-handheld-gripper.pdf",
+    "sha256": "fa1740a54847aa44a639820897fb5f2e6682482f5f0f2dc196be77c3eba21660",
+    "bytes": 1117393,
+    "pages": 13,
+    "title": "Specialist handheld gripper: print and assembly",
+    "subject": "specialist_description 0.6.0 (cce7e11)",
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "checked_at": "2026-11-16T19:57:50+08:00",
+    "action": "moved unchanged per user request"
+  },
+  {
+    "original_name": "2.pdf",
+    "original_path": "/home/xense/src/specialist-umi/2.pdf",
+    "stored_path": "docs/reference/official/specialist-actuated-gripper.pdf",
+    "sha256": "73a03f57ab3d6835c38cd70394e1c84e01cebb52f7160e091e39727fb41e2e2b",
+    "bytes": 1665066,
+    "pages": 19,
+    "title": "Specialist actuated gripper: print and assembly",
+    "subject": "specialist_description 0.6.0 (cce7e11)",
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "checked_at": "2026-11-16T19:57:50+08:00",
+    "action": "moved unchanged per user request"
+  },
+  {
+    "original_name": "3.pdf",
+    "original_path": "/home/xense/src/specialist-umi/3.pdf",
+    "stored_path": "docs/reference/official/specialist-anchor-tags.pdf",
+    "sha256": "11fb37f669cf5e1e1579780721a82b33cb2d48c696230767263378fc80f9fd99",
+    "bytes": 26548,
+    "pages": 2,
+    "title": "Specialist anchor tags",
+    "subject": "tagStandard41h12 0, 1",
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "checked_at": "2026-11-16T19:57:50+08:00",
+    "action": "moved unchanged per user request"
+  }
+]

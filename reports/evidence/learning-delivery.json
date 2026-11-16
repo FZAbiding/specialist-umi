@@ -1,0 +1,57 @@
+{
+  "checked": "2026-11-17T02:19:58.288806+08:00",
+  "version": "v2026.11.17.rc.1",
+  "core_suite": {
+    "command": "mamba run -n specialist-umi pytest -q",
+    "summary": "384 passed, 14 warnings in 14.48s",
+    "status": "passed",
+    "log": "logs/learning-20261117/core-tests.log",
+    "gpu_flow_default_threshold_bytes": 8589934592,
+    "threshold_overridden": false
+  },
+  "new_geometric_tests": 13,
+  "quality": {
+    "ruff": "passed",
+    "format": "134 files formatted",
+    "mypy": "67 source files passed",
+    "bash_syntax": "passed"
+  },
+  "report": {
+    "render": "passed v2026.11.17.rc.1; 38 figures; 390/1280 visual checks without problems",
+    "sheets_reviewed": 3,
+    "verifier": "passed: version, anchors, local links, evidence and figure captions",
+    "pdf_exported": false,
+    "renderer": "visual-explainer kit/render.mjs",
+    "browser": "existing newer Chromium cache via isolated PLAYWRIGHT_BROWSERS_PATH; legacy Chromium134 SVG checker incompatible",
+    "preview_scope": "Main and targeted action, AprilTag, calibration and plan excerpts rendered/reviewed; actual capture photos remain local"
+  },
+  "source_pins": "configs/sources.lock.json",
+  "source_pins_verified": 5,
+  "official_pdf_hashes_verified": 3,
+  "real_export": "reports/evidence/eef-export-validation.json",
+  "apriltag_experiment": "reports/evidence/apriltag-demo.json",
+  "eef_retargeting": "reports/evidence/eef-actions-demo.json",
+  "source_reading": "reports/evidence/learning-sources.json",
+  "publication_scope": "Code, documents, official PDF references, synthetic assets and numeric evidence; raw videos/RRDs and actual capture photos stay in ignored logs",
+  "fresh_checkout_validation": {
+    "snapshot": "git checkout-index of staged files, outside worktree",
+    "report_verifier": "passed without any local logs; 25 optional local-only artifacts absent",
+    "native_build": "passed; rebuilt snapshot C++ extension using installed mamba dependencies and existing pinned header cache",
+    "geometry_tests": "13 passed in 0.07s",
+    "limit": "Not a fresh-machine or fresh-environment installation test"
+  },
+  "hardware_limit": "No servo motion, direct camera USB stream, external pose ground truth, 01 IK/control or pi05 adapter/training",
+  "git_push_authorization": "Explicit user instruction on 2026-11-17; actual committed/pushed SHA is recorded by Git, not claimed in this file",
+  "staged_audit": {
+    "files": 61,
+    "findings": 0,
+    "raw_recordings_rrds_real_capture_photos_included": false,
+    "rules": [
+      "private-key headers",
+      "GitHub token patterns",
+      "AWS key IDs",
+      "credential URLs"
+    ],
+    "limit": "Pattern scan, not an exhaustive security audit"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "version": "v2026.11.17.rc.1",
+  "status": "release-candidate",
+  "date": "2026-11-17",
+  "main_report": "reports/specialist-official-demo.html",
+  "main_source": "reports/specialist-official-demo.src.html",
+  "scope": "官方复现、初始基准与动作导出、AprilTag教学及后续验收计划",
+  "pdf_update_policy": "on_explicit_user_request_only",
+  "formal_release_created": false
+}

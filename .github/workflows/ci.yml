@@ -25,6 +25,8 @@ jobs:
         run: uvx ruff@0.15.0 check
       - name: Run ruff format
         run: uvx ruff@0.15.0 format --diff
+      - name: Check versioned report and evidence links
+        run: python tools/verify_report.py
 
   typecheck:
     runs-on: ubuntu-latest

@@ -1,0 +1,66 @@
+{
+  "kind": "synthetic initial-frame retargeting; not hardware execution",
+  "rows": 101,
+  "period_s": 0.02,
+  "chunk_length": 10,
+  "retarget_formula": "robot_start @ inv(human_start) @ human_pose[t]",
+  "body_delta_invariance_max_error": 3.3306690738754696e-16,
+  "human_world_T_initial": [
+    [
+      2.220446049250313e-16,
+      -1.0,
+      0.0,
+      0.7
+    ],
+    [
+      1.0,
+      2.220446049250313e-16,
+      0.0,
+      0.3
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.4
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "robot_base_T_initial": [
+    [
+      0.8660254037844387,
+      0.49999999999999994,
+      0.0,
+      0.4
+    ],
+    [
+      -0.49999999999999994,
+      0.8660254037844387,
+      -0.0,
+      -0.2
+    ],
+    [
+      -0.0,
+      0.0,
+      1.0,
+      0.5
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "axis_assumption": "Human TCP and robot TCP use the same axes; scale is 1 in meters",
+  "limits": [
+    "No IK or collision check",
+    "No actual robot initial pose measured",
+    "No policy trained"
+  ]
+}

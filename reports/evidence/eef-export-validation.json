@@ -1,0 +1,95 @@
+{
+  "checked": "2026-11-17T02:13:46.523379+08:00",
+  "status": "passed",
+  "state_rows": 4359,
+  "action_rows": 4358,
+  "reference": {
+    "source": "logs/real-capture-20261116/estimate/20261116_192018_IAQEB2604VWWN7.rrd",
+    "time_s": 1.0,
+    "world_T_initial": [
+      [
+        0.98369497284176,
+        -0.14339983651780683,
+        0.10853887456812675,
+        0.6029479982647233
+      ],
+      [
+        0.14278636314869037,
+        0.9896622247333249,
+        0.013443787957904685,
+        0.20278167476603295
+      ],
+      [
+        -0.10934466107048713,
+        0.0022732845296931457,
+        0.994001296414058,
+        -0.3290163353398338
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "default": "first retained state, not necessarily recording start",
+    "bimanual": "Pass the same --initial-frame to both hands to preserve their baseline"
+  },
+  "definitions": {
+    "delta_frame": "body",
+    "delta_steps": 1,
+    "action_rows": 4358,
+    "chunk_length": 1,
+    "chunk_frame": "body",
+    "chunk_rows": 4358,
+    "body_formula": "inv(world_eef[t]) @ world_eef[t+k]",
+    "world_vector_formula": "[p_next-p_now, rotvec(R_next @ R_now.T)]",
+    "rotation": "SO(3) rotation vector, rad; not Euler subtraction or SE(3) log twist",
+    "translation": "m per selected interval, not m/s",
+    "chunk_formula": "inv(world_eef[t]) @ world_eef[t+h*k], same t for every h",
+    "gripper": "absolute target opening in rad, not differenced",
+    "tail": "Only complete future targets; no zero/identity padding",
+    "policy_integration": "Geometric export; not a verified pi0.5 dataset adapter"
+  },
+  "errors": {
+    "delta_reconstruct_max": 9.992007221626409e-16,
+    "initial_reconstruct_max": 9.992007221626409e-16,
+    "chunk_reconstruct_max": 9.992007221626409e-16
+  },
+  "complete_future_windows": true,
+  "finite_arrays": true,
+  "real_chunk_test": {
+    "delta_steps": 5,
+    "chunk_length": 16,
+    "rows": 4279
+  },
+  "artifacts": {
+    "logs/014-processing/poses/right-poses.npz": {
+      "bytes": 3635299,
+      "sha256": "4a7d612867d27f8478b03962d702a57bee0a7330c0f20446c0cbdb85286e6232"
+    },
+    "logs/014-processing/poses/right-actions.csv": {
+      "bytes": 1064655,
+      "sha256": "c35fb29494cdaae9295bf7976ec7fb044c2246bd4f5ae5e0cb1a209ad84e31ea"
+    },
+    "logs/014-processing/poses/right-poses.csv": {
+      "bytes": 1168211,
+      "sha256": "5c14872431ffa32898f3265955bb064cbe450f8aa980fa4e1d5e5f814cab8835"
+    }
+  },
+  "tests": [
+    "body/world axes direction",
+    "matrix reconstruction",
+    "global world-change invariance",
+    "fixed observation chunk anchor",
+    "shared bimanual baseline (synthetic)",
+    "reference interpolation bounds",
+    "invalid horizons and reflection rejected"
+  ],
+  "limits": [
+    "Only one real right hand",
+    "Initial robot pose and TCP axes not calibrated",
+    "No IK, hardware execution or pi05 data adapter",
+    "Matrix roundtrip is not external pose accuracy"
+  ]
+}

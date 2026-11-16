@@ -1,0 +1,392 @@
+{
+  "version": "v2026.11.16.rc.3",
+  "kind": "real-camera-file-analysis",
+  "camera": "Insta360 X3",
+  "serial": "IAQEB2604VWWN7",
+  "firmware": "v1.1.6_build1",
+  "source_directory": "/media/xense/6237-3439/DCIM/Camera01",
+  "local_directory": "/home/xense/src/specialist-umi/logs/real-capture-20261116/raw/IAQEB2604VWWN7",
+  "files": [
+    {
+      "source": "/media/xense/6237-3439/DCIM/Camera01/VID_20261116_190243_00_013.insv",
+      "stored": "/home/xense/src/specialist-umi/logs/real-capture-20261116/raw/IAQEB2604VWWN7/VID_20261116_190243_00_013.insv",
+      "bytes": 422007571,
+      "sha256": "f88b848cb972f6e04f1414245d3d94ef8a89701758c1a0ffce19853fcdc693a8",
+      "kind": "real-camera-original"
+    },
+    {
+      "source": "/media/xense/6237-3439/DCIM/Camera01/VID_20261116_190243_10_013.insv",
+      "stored": "/home/xense/src/specialist-umi/logs/real-capture-20261116/raw/IAQEB2604VWWN7/VID_20261116_190243_10_013.insv",
+      "bytes": 419430400,
+      "sha256": "c86f464d3aa95de4135aeedadd756458e90c75ee9d047ddacfe741bd9428234c",
+      "kind": "real-camera-original"
+    },
+    {
+      "source": "/media/xense/6237-3439/DCIM/Camera01/VID_20261116_192018_00_014.insv",
+      "stored": "/home/xense/src/specialist-umi/logs/real-capture-20261116/raw/IAQEB2604VWWN7/VID_20261116_192018_00_014.insv",
+      "bytes": 443070771,
+      "sha256": "c76c104628598134c8499de55d60ce6c48bcf64825134edb21b01b48f14e1219",
+      "kind": "real-camera-original"
+    },
+    {
+      "source": "/media/xense/6237-3439/DCIM/Camera01/VID_20261116_192018_10_014.insv",
+      "stored": "/home/xense/src/specialist-umi/logs/real-capture-20261116/raw/IAQEB2604VWWN7/VID_20261116_192018_10_014.insv",
+      "bytes": 440401920,
+      "sha256": "c14532a85b68157f98f3384288e29f9052bf0eb5ba1719e01a9cf6254f79b3a7",
+      "kind": "real-camera-original"
+    },
+    {
+      "source": "/media/xense/6237-3439/DCIM/Camera01/LRV_20261116_190243_11_013.lrv",
+      "stored": "/home/xense/src/specialist-umi/logs/real-capture-20261116/raw/IAQEB2604VWWN7/LRV_20261116_190243_11_013.lrv",
+      "bytes": 43211874,
+      "sha256": "36561cfb294b745bc8fab8569919d304e5ddbbccb85c2a344781b38b2389d139",
+      "kind": "camera-low-resolution-preview"
+    },
+    {
+      "source": "/media/xense/6237-3439/DCIM/Camera01/LRV_20261116_192018_11_014.lrv",
+      "stored": "/home/xense/src/specialist-umi/logs/real-capture-20261116/raw/IAQEB2604VWWN7/LRV_20261116_192018_11_014.lrv",
+      "bytes": 43307298,
+      "sha256": "36a6a183f045414f2efc5d21e5bbbf60fbbca991f611a12992adfacf8ce335fe",
+      "kind": "camera-low-resolution-preview"
+    }
+  ],
+  "clips": [
+    {
+      "file": "VID_20261116_190243_00_013.insv",
+      "duration_s": 53.08636666666667,
+      "fps": 29.97002997002997,
+      "raw_imu_samples": 55312,
+      "imu_rate_hz": 1000.0000000005542,
+      "imu_monotonic": true,
+      "imu_max_gap_s": 0.0010830000000154882,
+      "exposure_s_percentiles": [
+        0.0072848612908273935,
+        0.00998629629611969,
+        0.01998351886868477
+      ],
+      "rolling_shutter_s": 0.015727346420288085,
+      "offset_v3_length": 40,
+      "tag_samples": [
+        {
+          "lens": "00",
+          "time_s": 1.0,
+          "ids": [
+            0,
+            1
+          ],
+          "margins": [
+            50.499237060546875,
+            46.385841369628906
+          ],
+          "median_luma": 109.0,
+          "laplacian_variance": 209.14496699970573
+        },
+        {
+          "lens": "00",
+          "time_s": 8.0,
+          "ids": [
+            0,
+            1
+          ],
+          "margins": [
+            46.081092834472656,
+            43.507503509521484
+          ],
+          "median_luma": 120.0,
+          "laplacian_variance": 137.41979759965758
+        },
+        {
+          "lens": "00",
+          "time_s": 26.559866666666668,
+          "ids": [
+            0
+          ],
+          "margins": [
+            49.226810455322266
+          ],
+          "median_luma": 112.0,
+          "laplacian_variance": 155.76550509667254
+        },
+        {
+          "lens": "00",
+          "time_s": 51.119733333333336,
+          "ids": [
+            0,
+            1
+          ],
+          "margins": [
+            44.71826171875,
+            45.6363525390625
+          ],
+          "median_luma": 123.0,
+          "laplacian_variance": 117.11016548702109
+        },
+        {
+          "lens": "10",
+          "time_s": 1.0,
+          "ids": [],
+          "margins": [],
+          "median_luma": 84.0,
+          "laplacian_variance": 316.7725645830319
+        },
+        {
+          "lens": "10",
+          "time_s": 8.0,
+          "ids": [],
+          "margins": [],
+          "median_luma": 72.0,
+          "laplacian_variance": 135.0288119319942
+        },
+        {
+          "lens": "10",
+          "time_s": 26.543183333333335,
+          "ids": [],
+          "margins": [],
+          "median_luma": 77.0,
+          "laplacian_variance": 269.65445082786755
+        },
+        {
+          "lens": "10",
+          "time_s": 51.08636666666667,
+          "ids": [],
+          "margins": [],
+          "median_luma": 86.0,
+          "laplacian_variance": 164.83972927093507
+        }
+      ],
+      "peak_accel_m_s2": 305.8969156585051,
+      "peak_accel_time_s": 43.835671000000005,
+      "tap_ok": false,
+      "tap_error": "the strongest tap burst sits at 83% of the recording, before its last tenth",
+      "base_path": "/home/xense/src/specialist-umi/logs/real-capture-20261116/base/20261116_190243_IAQEB2604VWWN7.rrd"
+    },
+    {
+      "file": "VID_20261116_192018_00_014.insv",
+      "duration_s": 57.3573,
+      "fps": 29.97002997002997,
+      "raw_imu_samples": 59392,
+      "imu_rate_hz": 1000.0000000005542,
+      "imu_monotonic": true,
+      "imu_max_gap_s": 0.0010959999999897718,
+      "exposure_s_percentiles": [
+        0.006653889082372189,
+        0.00998629629611969,
+        0.00998629629611969
+      ],
+      "rolling_shutter_s": 0.015727346420288085,
+      "offset_v3_length": 40,
+      "tag_samples": [
+        {
+          "lens": "00",
+          "time_s": 1.0,
+          "ids": [
+            0,
+            1
+          ],
+          "margins": [
+            61.08977508544922,
+            52.04326248168945
+          ],
+          "median_luma": 113.0,
+          "laplacian_variance": 215.4513079925374
+        },
+        {
+          "lens": "00",
+          "time_s": 8.0,
+          "ids": [
+            0,
+            1
+          ],
+          "margins": [
+            54.820003509521484,
+            47.7569580078125
+          ],
+          "median_luma": 117.0,
+          "laplacian_variance": 296.22145292499874
+        },
+        {
+          "lens": "00",
+          "time_s": 28.695333333333334,
+          "ids": [
+            0,
+            1
+          ],
+          "margins": [
+            56.93158721923828,
+            45.83795166015625
+          ],
+          "median_luma": 118.0,
+          "laplacian_variance": 356.503494173175
+        },
+        {
+          "lens": "00",
+          "time_s": 55.39066666666667,
+          "ids": [
+            0,
+            1
+          ],
+          "margins": [
+            52.1234016418457,
+            48.296749114990234
+          ],
+          "median_luma": 114.0,
+          "laplacian_variance": 177.0863169606587
+        },
+        {
+          "lens": "10",
+          "time_s": 1.0,
+          "ids": [
+            2003,
+            2004,
+            2005
+          ],
+          "margins": [
+            63.32673263549805,
+            61.546791076660156,
+            63.08202362060547
+          ],
+          "median_luma": 88.0,
+          "laplacian_variance": 396.4620810586728
+        },
+        {
+          "lens": "10",
+          "time_s": 8.0,
+          "ids": [
+            2003,
+            2004,
+            2005
+          ],
+          "margins": [
+            54.38069534301758,
+            49.62947463989258,
+            58.00880813598633
+          ],
+          "median_luma": 83.0,
+          "laplacian_variance": 295.30097946873326
+        },
+        {
+          "lens": "10",
+          "time_s": 28.67865,
+          "ids": [
+            2003,
+            2004,
+            2005
+          ],
+          "margins": [
+            62.846858978271484,
+            51.134796142578125,
+            65.5420913696289
+          ],
+          "median_luma": 90.0,
+          "laplacian_variance": 198.314004970086
+        },
+        {
+          "lens": "10",
+          "time_s": 55.3573,
+          "ids": [
+            2003,
+            2004,
+            2005
+          ],
+          "margins": [
+            66.42837524414062,
+            61.8225212097168,
+            62.831607818603516
+          ],
+          "median_luma": 80.0,
+          "laplacian_variance": 317.5182195028051
+        }
+      ],
+      "peak_accel_m_s2": 249.71719753967943,
+      "peak_accel_time_s": 47.675391000000005,
+      "tap_ok": false,
+      "tap_error": "the strongest tap burst sits at 83% of the recording, before its last tenth",
+      "base_path": "/home/xense/src/specialist-umi/logs/real-capture-20261116/base/20261116_192018_IAQEB2604VWWN7.rrd"
+    }
+  ],
+  "anchor_size_m": 0.1,
+  "anchor_size_basis": "User confirms official A4 template printed 1:1; template states inner square 100 mm, whole tag 180 mm; not independently measured",
+  "full_insv_decode": [
+    {
+      "file": "VID_20261116_190243_00_013.insv",
+      "returncode": 0,
+      "elapsed_s": 10.84,
+      "errors": ""
+    },
+    {
+      "file": "VID_20261116_190243_10_013.insv",
+      "returncode": 0,
+      "elapsed_s": 10.6,
+      "errors": ""
+    },
+    {
+      "file": "VID_20261116_192018_00_014.insv",
+      "returncode": 0,
+      "elapsed_s": 11.49,
+      "errors": ""
+    },
+    {
+      "file": "VID_20261116_192018_10_014.insv",
+      "returncode": 0,
+      "elapsed_s": 11.51,
+      "errors": ""
+    }
+  ],
+  "base_readback": [
+    {
+      "session": "20261116_190243_IAQEB2604VWWN7",
+      "path": "/home/xense/src/specialist-umi/logs/real-capture-20261116/base/20261116_190243_IAQEB2604VWWN7.rrd",
+      "bytes": 801258689,
+      "slots": [
+        "cam00"
+      ],
+      "imu_rows": 52992,
+      "imu_first_s": 0.000359999,
+      "imu_last_s": 53.086288,
+      "imu_finite": true,
+      "front": {
+        "frames": 1592,
+        "first_s": 0.0,
+        "last_s": 53.086366667,
+        "fps": 29.970029670629756
+      },
+      "rear": {
+        "frames": 1591,
+        "first_s": 0.0,
+        "last_s": 53.053,
+        "fps": 29.970029670629756
+      },
+      "tap_ok": false,
+      "tap_error": "the strongest tap burst sits at 83% of the recording, before its last tenth"
+    },
+    {
+      "session": "20261116_192018_IAQEB2604VWWN7",
+      "path": "/home/xense/src/specialist-umi/logs/real-capture-20261116/base/20261116_192018_IAQEB2604VWWN7.rrd",
+      "bytes": 865597030,
+      "slots": [
+        "cam00"
+      ],
+      "imu_rows": 57255,
+      "imu_first_s": 0.000650999,
+      "imu_last_s": 57.356815,
+      "imu_finite": true,
+      "front": {
+        "frames": 1720,
+        "first_s": 0.0,
+        "last_s": 57.3573,
+        "fps": 29.970029670629756
+      },
+      "rear": {
+        "frames": 1719,
+        "first_s": 0.0,
+        "last_s": 57.323933333,
+        "fps": 29.970029670629756
+      },
+      "tap_ok": false,
+      "tap_error": "the strongest tap burst sits at 83% of the recording, before its last tenth"
+    }
+  ],
+  "estimate_run": false,
+  "state_run": false,
+  "scope": "File validation, sampled tag detection, official tap detector, raw copy and real base conversion; no metric trajectory yet"
+}

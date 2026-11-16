@@ -1,0 +1,112 @@
+{
+  "reference_tag": 0,
+  "world_T_anchor": {
+    "0": [
+      [
+        -0.0050774407031755064,
+        0.3054798460772059,
+        0.9521850047320386,
+        9.364390773231035e-13
+      ],
+      [
+        -0.03508616215437635,
+        -0.9516654093319477,
+        0.30512605576438967,
+        1.7662940337767608e-12
+      ],
+      [
+        0.9993713928371086,
+        -0.03185925802185641,
+        0.015550140099504839,
+        -3.238537367965255e-13
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "1": [
+      [
+        -0.0005106590029038127,
+        0.26136418390238203,
+        0.9652401269116533,
+        -0.31822654604911804
+      ],
+      [
+        -0.008254460445521555,
+        -0.9652084700419148,
+        0.26135124495991935,
+        1.011724591255188
+      ],
+      [
+        0.9999658009702812,
+        -0.007834075081863512,
+        0.002650312712804137,
+        -0.0033713250886648893
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "anchor_center_distance_m": 1.0605970719319857,
+  "base_tag_static": {
+    "tag_id": [
+      2003
+    ],
+    "Transform3D:quaternion": [
+      [
+        -0.7501593828201294,
+        0.6486563682556152,
+        0.09109850972890854,
+        0.09059212356805801
+      ]
+    ],
+    "Transform3D:translation": [
+      [
+        0.0033346081618219614,
+        -0.049988940358161926,
+        0.032156772911548615
+      ]
+    ]
+  },
+  "sources": [
+    "src/specialist/vi_ba/compose.py:align_to_shared_world,anchor_gauge_prior,_add_anchor_factors",
+    "src/specialist/vi_ba/imu.py:GRAVITY_WORLD",
+    "src/specialist/vi_ba/reference_solve.py:solve_joint",
+    "src/specialist/vi_ba/viz.py:_gripper_streams"
+  ],
+  "world_definition": "Reference anchor 0 origin, gravity +Z up, reference-anchor-based heading gauge",
+  "formula": "W_T_G = W_T_A0 @ inv(C_T_A0) @ C_T_G",
+  "anchor_size_m": 0.1,
+  "measured_external_distance": false,
+  "robot_base_alignment_done": false,
+  "cross_station": {
+    "status": "design guidance only; calibration not performed",
+    "required_transform": "task_frame_T_capture_world per station",
+    "prerequisites": [
+      "Consistent fixture datum semantics",
+      "Known, repeatable calibration-board-to-fixture pose or at least three non-collinear datum points measured in capture world",
+      "Measured tag sizes and independent validation"
+    ],
+    "metadata_proposed": [
+      "station_id",
+      "tag_size_m",
+      "task_frame_definition",
+      "task_T_world",
+      "calibration_id",
+      "validation_error",
+      "world_id",
+      "session_id"
+    ],
+    "limits": "Arbitrary wall tags plus IMU alone do not reveal fixture or task-object frame. Real scene and physical differences remain.",
+    "body_delta_formula": "inv(T_F_G(t)) @ T_F_G(t+1)",
+    "official_robot_world_reference": "https://docs.opencv.org/4.5.4/d9/d0c/group__calib3d.html",
+    "reuse_rule": "Bind calibration to station and capture-world definition; validate before reuse across sessions"
+  }
+}

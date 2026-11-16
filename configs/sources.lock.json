@@ -1,0 +1,22 @@
+{
+  "specialist_description": {
+    "url": "https://github.com/specialist-ai/specialist_description.git",
+    "commit": "56985a8b32018929b07f337bb0a5602e9b8d6f7a"
+  },
+  "specialist_sim": {
+    "url": "https://github.com/specialist-ai/specialist_sim.git",
+    "commit": "9a6a4d44c845e162791e21992eb0766d8a981c32"
+  },
+  "feetech_driver": {
+    "url": "https://github.com/specialist-ai/feetech_driver.git",
+    "commit": "5447891551a246f7c371cd96d3b794b67424c3e8"
+  },
+  "specialist_sdk": {
+    "url": "https://github.com/specialist-ai/specialist_sdk.git",
+    "commit": "ad2b18144fdbe3fa99cfa27237aa02863a17bee4"
+  },
+  "insta360_driver": {
+    "url": "https://github.com/specialist-ai/insta360_driver.git",
+    "commit": "22641e241c18857f345fbbf8643592194beefb7f"
+  }
+}

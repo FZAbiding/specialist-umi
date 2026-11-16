@@ -1,0 +1,1251 @@
+{
+  "session": "20261116_192018_IAQEB2604VWWN7",
+  "slot": "cam00",
+  "definitions": {
+    "missing_anchor": "No stored anchor reprojection rays at a keyframe; not a pose-loss flag",
+    "episode": "Maximal consecutive missing-keyframe run; intervals [start, end)",
+    "ray_assignment": "Nearest solved anchor center to each ray endpoint; <= 0.08 m",
+    "duration": "Hold each keyframe observation until the next; last to video end",
+    "pose_limit": "Continuous IMU-propagated poses do not establish tracking accuracy"
+  },
+  "video_end_s": 57.3573,
+  "pose": {
+    "samples": 57155,
+    "first_s": 0.000650999,
+    "last_s": 57.256652,
+    "median_period_ms": 0.9999999999998899,
+    "max_period_ms": 1.0959990000003472,
+    "non_increasing_steps": 0,
+    "nonfinite_rows": 0,
+    "gap_rule": "dt > 2 * median(dt); internal intervals only",
+    "internal_gaps": []
+  },
+  "keyframe_pose": {
+    "samples": 573,
+    "first_s": 0.0,
+    "last_s": 57.2572,
+    "median_period_ms": 100.09999999999941,
+    "max_period_ms": 100.10000100000127,
+    "non_increasing_steps": 0,
+    "nonfinite_rows": 0,
+    "gap_rule": "dt > 2 * median(dt); internal intervals only",
+    "internal_gaps": []
+  },
+  "trajectory": {
+    "samples": 57155,
+    "first_s": 0.000650999,
+    "last_s": 57.256652,
+    "median_period_ms": 0.9999999999998899,
+    "max_period_ms": 1.0959990000003472,
+    "non_increasing_steps": 0,
+    "nonfinite_rows": 0,
+    "gap_rule": "dt > 2 * median(dt); internal intervals only",
+    "internal_gaps": []
+  },
+  "gyro": {
+    "samples": 57255,
+    "first_s": 0.000650999,
+    "last_s": 57.356815,
+    "median_period_ms": 0.9999999999998899,
+    "max_period_ms": 1.0959990000003472,
+    "non_increasing_steps": 0,
+    "nonfinite_rows": 0,
+    "gap_rule": "dt > 2 * median(dt); internal intervals only",
+    "internal_gaps": []
+  },
+  "accel": {
+    "samples": 57255,
+    "first_s": 0.000650999,
+    "last_s": 57.356815,
+    "median_period_ms": 0.9999999999998899,
+    "max_period_ms": 1.0959990000003472,
+    "non_increasing_steps": 0,
+    "nonfinite_rows": 0,
+    "gap_rule": "dt > 2 * median(dt); internal intervals only",
+    "internal_gaps": []
+  },
+  "pose_boundaries": {
+    "before_first_pose_s": 0.000650999,
+    "after_last_pose_s": 0.10064799999999963,
+    "explanation": "Official highrate propagation only spans first to last keyframe"
+  },
+  "anchors": {
+    "0": {
+      "keyframes": 573,
+      "missing_keyframes": 77,
+      "missing_percent": 13.438045375218149,
+      "episodes": 35,
+      "longest_s": 2.0020000000000024,
+      "missing_hold_s": 7.707699999000006,
+      "runs": [
+        {
+          "start_s": 18.5185,
+          "end_s": 18.6186,
+          "duration_s": 0.10010000000000119,
+          "keyframes": 1
+        },
+        {
+          "start_s": 18.7187,
+          "end_s": 18.9189,
+          "duration_s": 0.20020000000000238,
+          "keyframes": 2
+        },
+        {
+          "start_s": 19.019,
+          "end_s": 19.3193,
+          "duration_s": 0.3003,
+          "keyframes": 3
+        },
+        {
+          "start_s": 19.6196,
+          "end_s": 19.8198,
+          "duration_s": 0.20020000000000238,
+          "keyframes": 2
+        },
+        {
+          "start_s": 20.2202,
+          "end_s": 20.3203,
+          "duration_s": 0.10010000000000119,
+          "keyframes": 1
+        },
+        {
+          "start_s": 23.023,
+          "end_s": 23.1231,
+          "duration_s": 0.10010000000000119,
+          "keyframes": 1
+        },
+        {
+          "start_s": 23.3233,
+          "end_s": 23.4234,
+          "duration_s": 0.10010000000000119,
+          "keyframes": 1
+        },
+        {
+          "start_s": 24.2242,
+          "end_s": 24.3243,
+          "duration_s": 0.10010000000000119,
+          "keyframes": 1
+        },
+        {
+          "start_s": 24.5245,
+          "end_s": 24.7247,
+          "duration_s": 0.20019999999999882,
+          "keyframes": 2
+        },
+        {
+          "start_s": 26.1261,
+          "end_s": 26.3263,
+          "duration_s": 0.20019999999999882,
+          "keyframes": 2
+        },
+        {
+          "start_s": 26.5265,
+          "end_s": 26.6266,
+          "duration_s": 0.10010000000000119,
+          "keyframes": 1
+        },
+        {
+          "start_s": 27.1271,
+          "end_s": 27.3273,
+          "duration_s": 0.20020000000000238,
+          "keyframes": 2
+        },
+        {
+          "start_s": 33.533499999,
+          "end_s": 33.6336,
+          "duration_s": 0.10010000100000127,
+          "keyframes": 1
+        },
+        {
+          "start_s": 33.7337,
+          "end_s": 33.833799999,
+          "duration_s": 0.1000999990000011,
+          "keyframes": 1
+        },
+        {
+          "start_s": 34.034,
+          "end_s": 34.134099999,
+          "duration_s": 0.1000999990000011,
+          "keyframes": 1
+        },
+        {
+          "start_s": 34.2342,
+          "end_s": 34.3343,
+          "duration_s": 0.10009999999999764,
+          "keyframes": 1
+        },
+        {
+          "start_s": 35.6356,
+          "end_s": 35.7357,
+          "duration_s": 0.10010000000000474,
+          "keyframes": 1
+        },
+        {
+          "start_s": 36.036,
+          "end_s": 36.2362,
+          "duration_s": 0.20019999999999527,
+          "keyframes": 2
+        },
+        {
+          "start_s": 36.3363,
+          "end_s": 36.4364,
+          "duration_s": 0.10009999999999764,
+          "keyframes": 1
+        },
+        {
+          "start_s": 36.5365,
+          "end_s": 36.6366,
+          "duration_s": 0.10010000000000474,
+          "keyframes": 1
+        },
+        {
+          "start_s": 36.8368,
+          "end_s": 36.9369,
+          "duration_s": 0.10010000000000474,
+          "keyframes": 1
+        },
+        {
+          "start_s": 38.5385,
+          "end_s": 38.9389,
+          "duration_s": 0.40039999999999765,
+          "keyframes": 4
+        },
+        {
+          "start_s": 39.1391,
+          "end_s": 39.7397,
+          "duration_s": 0.6006,
+          "keyframes": 6
+        },
+        {
+          "start_s": 40.04,
+          "end_s": 40.1401,
+          "duration_s": 0.10009999999999764,
+          "keyframes": 1
+        },
+        {
+          "start_s": 41.3413,
+          "end_s": 41.7417,
+          "duration_s": 0.40040000000000475,
+          "keyframes": 4
+        },
+        {
+          "start_s": 44.4444,
+          "end_s": 44.5445,
+          "duration_s": 0.10009999999999764,
+          "keyframes": 1
+        },
+        {
+          "start_s": 44.6446,
+          "end_s": 46.6466,
+          "duration_s": 2.0020000000000024,
+          "keyframes": 20
+        },
+        {
+          "start_s": 47.6476,
+          "end_s": 47.7477,
+          "duration_s": 0.10010000000000474,
+          "keyframes": 1
+        },
+        {
+          "start_s": 48.048,
+          "end_s": 48.1481,
+          "duration_s": 0.10009999999999764,
+          "keyframes": 1
+        },
+        {
+          "start_s": 51.1511,
+          "end_s": 51.2512,
+          "duration_s": 0.10009999999999764,
+          "keyframes": 1
+        },
+        {
+          "start_s": 51.3513,
+          "end_s": 51.5515,
+          "duration_s": 0.20019999999999527,
+          "keyframes": 2
+        },
+        {
+          "start_s": 51.6516,
+          "end_s": 51.8518,
+          "duration_s": 0.20019999999999527,
+          "keyframes": 2
+        },
+        {
+          "start_s": 54.054,
+          "end_s": 54.2542,
+          "duration_s": 0.20019999999999527,
+          "keyframes": 2
+        },
+        {
+          "start_s": 54.3543,
+          "end_s": 54.4544,
+          "duration_s": 0.10009999999999764,
+          "keyframes": 1
+        },
+        {
+          "start_s": 54.5545,
+          "end_s": 54.7547,
+          "duration_s": 0.20020000000000238,
+          "keyframes": 2
+        }
+      ]
+    },
+    "1": {
+      "keyframes": 573,
+      "missing_keyframes": 187,
+      "missing_percent": 32.63525305410122,
+      "episodes": 36,
+      "longest_s": 8.4084,
+      "missing_hold_s": 18.718700000000005,
+      "runs": [
+        {
+          "start_s": 10.1101,
+          "end_s": 10.2102,
+          "duration_s": 0.10010000000000119,
+          "keyframes": 1
+        },
+        {
+          "start_s": 10.3103,
+          "end_s": 10.4104,
+          "duration_s": 0.10009999999999941,
+          "keyframes": 1
+        },
+        {
+          "start_s": 13.6136,
+          "end_s": 13.7137,
+          "duration_s": 0.10009999999999941,
+          "keyframes": 1
+        },
+        {
+          "start_s": 14.2142,
+          "end_s": 14.3143,
+          "duration_s": 0.10009999999999941,
+          "keyframes": 1
+        },
+        {
+          "start_s": 15.1151,
+          "end_s": 15.2152,
+          "duration_s": 0.10009999999999941,
+          "keyframes": 1
+        },
+        {
+          "start_s": 17.3173,
+          "end_s": 17.4174,
+          "duration_s": 0.10010000000000119,
+          "keyframes": 1
+        },
+        {
+          "start_s": 18.5185,
+          "end_s": 18.6186,
+          "duration_s": 0.10010000000000119,
+          "keyframes": 1
+        },
+        {
+          "start_s": 18.7187,
+          "end_s": 19.3193,
+          "duration_s": 0.6006,
+          "keyframes": 6
+        },
+        {
+          "start_s": 19.5195,
+          "end_s": 19.8198,
+          "duration_s": 0.3003,
+          "keyframes": 3
+        },
+        {
+          "start_s": 20.1201,
+          "end_s": 20.5205,
+          "duration_s": 0.40039999999999765,
+          "keyframes": 4
+        },
+        {
+          "start_s": 22.1221,
+          "end_s": 22.2222,
+          "duration_s": 0.10010000000000119,
+          "keyframes": 1
+        },
+        {
+          "start_s": 23.023,
+          "end_s": 23.1231,
+          "duration_s": 0.10010000000000119,
+          "keyframes": 1
+        },
+        {
+          "start_s": 23.3233,
+          "end_s": 23.4234,
+          "duration_s": 0.10010000000000119,
+          "keyframes": 1
+        },
+        {
+          "start_s": 23.6236,
+          "end_s": 23.8238,
+          "duration_s": 0.20019999999999882,
+          "keyframes": 2
+        },
+        {
+          "start_s": 24.3243,
+          "end_s": 24.4244,
+          "duration_s": 0.10009999999999764,
+          "keyframes": 1
+        },
+        {
+          "start_s": 24.5245,
+          "end_s": 24.7247,
+          "duration_s": 0.20019999999999882,
+          "keyframes": 2
+        },
+        {
+          "start_s": 26.1261,
+          "end_s": 26.3263,
+          "duration_s": 0.20019999999999882,
+          "keyframes": 2
+        },
+        {
+          "start_s": 26.4264,
+          "end_s": 26.7267,
+          "duration_s": 0.3003,
+          "keyframes": 3
+        },
+        {
+          "start_s": 27.1271,
+          "end_s": 27.3273,
+          "duration_s": 0.20020000000000238,
+          "keyframes": 2
+        },
+        {
+          "start_s": 27.4274,
+          "end_s": 27.5275,
+          "duration_s": 0.10010000000000119,
+          "keyframes": 1
+        },
+        {
+          "start_s": 28.028,
+          "end_s": 28.2282,
+          "duration_s": 0.20020000000000238,
+          "keyframes": 2
+        },
+        {
+          "start_s": 29.8298,
+          "end_s": 38.2382,
+          "duration_s": 8.4084,
+          "keyframes": 84
+        },
+        {
+          "start_s": 38.5385,
+          "end_s": 39.3393,
+          "duration_s": 0.8008000000000024,
+          "keyframes": 8
+        },
+        {
+          "start_s": 39.4394,
+          "end_s": 39.7397,
+          "duration_s": 0.3003,
+          "keyframes": 3
+        },
+        {
+          "start_s": 40.04,
+          "end_s": 40.3403,
+          "duration_s": 0.3003,
+          "keyframes": 3
+        },
+        {
+          "start_s": 40.4404,
+          "end_s": 40.5405,
+          "duration_s": 0.10010000000000474,
+          "keyframes": 1
+        },
+        {
+          "start_s": 41.2412,
+          "end_s": 41.9419,
+          "duration_s": 0.7006999999999977,
+          "keyframes": 7
+        },
+        {
+          "start_s": 42.8428,
+          "end_s": 43.5435,
+          "duration_s": 0.7007000000000048,
+          "keyframes": 7
+        },
+        {
+          "start_s": 44.1441,
+          "end_s": 46.6466,
+          "duration_s": 2.5024999999999977,
+          "keyframes": 25
+        },
+        {
+          "start_s": 46.7467,
+          "end_s": 46.8468,
+          "duration_s": 0.10010000000000474,
+          "keyframes": 1
+        },
+        {
+          "start_s": 47.6476,
+          "end_s": 47.7477,
+          "duration_s": 0.10010000000000474,
+          "keyframes": 1
+        },
+        {
+          "start_s": 48.1481,
+          "end_s": 48.2482,
+          "duration_s": 0.10009999999999764,
+          "keyframes": 1
+        },
+        {
+          "start_s": 51.1511,
+          "end_s": 51.2512,
+          "duration_s": 0.10009999999999764,
+          "keyframes": 1
+        },
+        {
+          "start_s": 51.3513,
+          "end_s": 51.4514,
+          "duration_s": 0.10009999999999764,
+          "keyframes": 1
+        },
+        {
+          "start_s": 51.6516,
+          "end_s": 51.8518,
+          "duration_s": 0.20019999999999527,
+          "keyframes": 2
+        },
+        {
+          "start_s": 54.054,
+          "end_s": 54.4544,
+          "duration_s": 0.40039999999999765,
+          "keyframes": 4
+        }
+      ]
+    }
+  },
+  "no_anchor": {
+    "keyframes": 573,
+    "missing_keyframes": 71,
+    "missing_percent": 12.390924956369982,
+    "episodes": 33,
+    "longest_s": 2.0020000000000024,
+    "missing_hold_s": 7.10709999900001,
+    "runs": [
+      {
+        "start_s": 18.5185,
+        "end_s": 18.6186,
+        "duration_s": 0.10010000000000119,
+        "keyframes": 1
+      },
+      {
+        "start_s": 18.7187,
+        "end_s": 18.9189,
+        "duration_s": 0.20020000000000238,
+        "keyframes": 2
+      },
+      {
+        "start_s": 19.019,
+        "end_s": 19.3193,
+        "duration_s": 0.3003,
+        "keyframes": 3
+      },
+      {
+        "start_s": 19.6196,
+        "end_s": 19.8198,
+        "duration_s": 0.20020000000000238,
+        "keyframes": 2
+      },
+      {
+        "start_s": 20.2202,
+        "end_s": 20.3203,
+        "duration_s": 0.10010000000000119,
+        "keyframes": 1
+      },
+      {
+        "start_s": 23.023,
+        "end_s": 23.1231,
+        "duration_s": 0.10010000000000119,
+        "keyframes": 1
+      },
+      {
+        "start_s": 23.3233,
+        "end_s": 23.4234,
+        "duration_s": 0.10010000000000119,
+        "keyframes": 1
+      },
+      {
+        "start_s": 24.5245,
+        "end_s": 24.7247,
+        "duration_s": 0.20019999999999882,
+        "keyframes": 2
+      },
+      {
+        "start_s": 26.1261,
+        "end_s": 26.3263,
+        "duration_s": 0.20019999999999882,
+        "keyframes": 2
+      },
+      {
+        "start_s": 26.5265,
+        "end_s": 26.6266,
+        "duration_s": 0.10010000000000119,
+        "keyframes": 1
+      },
+      {
+        "start_s": 27.1271,
+        "end_s": 27.3273,
+        "duration_s": 0.20020000000000238,
+        "keyframes": 2
+      },
+      {
+        "start_s": 33.533499999,
+        "end_s": 33.6336,
+        "duration_s": 0.10010000100000127,
+        "keyframes": 1
+      },
+      {
+        "start_s": 33.7337,
+        "end_s": 33.833799999,
+        "duration_s": 0.1000999990000011,
+        "keyframes": 1
+      },
+      {
+        "start_s": 34.034,
+        "end_s": 34.134099999,
+        "duration_s": 0.1000999990000011,
+        "keyframes": 1
+      },
+      {
+        "start_s": 34.2342,
+        "end_s": 34.3343,
+        "duration_s": 0.10009999999999764,
+        "keyframes": 1
+      },
+      {
+        "start_s": 35.6356,
+        "end_s": 35.7357,
+        "duration_s": 0.10010000000000474,
+        "keyframes": 1
+      },
+      {
+        "start_s": 36.036,
+        "end_s": 36.2362,
+        "duration_s": 0.20019999999999527,
+        "keyframes": 2
+      },
+      {
+        "start_s": 36.3363,
+        "end_s": 36.4364,
+        "duration_s": 0.10009999999999764,
+        "keyframes": 1
+      },
+      {
+        "start_s": 36.5365,
+        "end_s": 36.6366,
+        "duration_s": 0.10010000000000474,
+        "keyframes": 1
+      },
+      {
+        "start_s": 36.8368,
+        "end_s": 36.9369,
+        "duration_s": 0.10010000000000474,
+        "keyframes": 1
+      },
+      {
+        "start_s": 38.5385,
+        "end_s": 38.9389,
+        "duration_s": 0.40039999999999765,
+        "keyframes": 4
+      },
+      {
+        "start_s": 39.1391,
+        "end_s": 39.3393,
+        "duration_s": 0.20020000000000238,
+        "keyframes": 2
+      },
+      {
+        "start_s": 39.4394,
+        "end_s": 39.7397,
+        "duration_s": 0.3003,
+        "keyframes": 3
+      },
+      {
+        "start_s": 40.04,
+        "end_s": 40.1401,
+        "duration_s": 0.10009999999999764,
+        "keyframes": 1
+      },
+      {
+        "start_s": 41.3413,
+        "end_s": 41.7417,
+        "duration_s": 0.40040000000000475,
+        "keyframes": 4
+      },
+      {
+        "start_s": 44.4444,
+        "end_s": 44.5445,
+        "duration_s": 0.10009999999999764,
+        "keyframes": 1
+      },
+      {
+        "start_s": 44.6446,
+        "end_s": 46.6466,
+        "duration_s": 2.0020000000000024,
+        "keyframes": 20
+      },
+      {
+        "start_s": 47.6476,
+        "end_s": 47.7477,
+        "duration_s": 0.10010000000000474,
+        "keyframes": 1
+      },
+      {
+        "start_s": 51.1511,
+        "end_s": 51.2512,
+        "duration_s": 0.10009999999999764,
+        "keyframes": 1
+      },
+      {
+        "start_s": 51.3513,
+        "end_s": 51.4514,
+        "duration_s": 0.10009999999999764,
+        "keyframes": 1
+      },
+      {
+        "start_s": 51.6516,
+        "end_s": 51.8518,
+        "duration_s": 0.20019999999999527,
+        "keyframes": 2
+      },
+      {
+        "start_s": 54.054,
+        "end_s": 54.2542,
+        "duration_s": 0.20019999999999527,
+        "keyframes": 2
+      },
+      {
+        "start_s": 54.3543,
+        "end_s": 54.4544,
+        "duration_s": 0.10009999999999764,
+        "keyframes": 1
+      }
+    ]
+  },
+  "fewer_than_all_anchors": {
+    "keyframes": 573,
+    "missing_keyframes": 193,
+    "missing_percent": 33.682373472949386,
+    "episodes": 36,
+    "longest_s": 8.4084,
+    "missing_hold_s": 19.319300000000002,
+    "runs": [
+      {
+        "start_s": 10.1101,
+        "end_s": 10.2102,
+        "duration_s": 0.10010000000000119,
+        "keyframes": 1
+      },
+      {
+        "start_s": 10.3103,
+        "end_s": 10.4104,
+        "duration_s": 0.10009999999999941,
+        "keyframes": 1
+      },
+      {
+        "start_s": 13.6136,
+        "end_s": 13.7137,
+        "duration_s": 0.10009999999999941,
+        "keyframes": 1
+      },
+      {
+        "start_s": 14.2142,
+        "end_s": 14.3143,
+        "duration_s": 0.10009999999999941,
+        "keyframes": 1
+      },
+      {
+        "start_s": 15.1151,
+        "end_s": 15.2152,
+        "duration_s": 0.10009999999999941,
+        "keyframes": 1
+      },
+      {
+        "start_s": 17.3173,
+        "end_s": 17.4174,
+        "duration_s": 0.10010000000000119,
+        "keyframes": 1
+      },
+      {
+        "start_s": 18.5185,
+        "end_s": 18.6186,
+        "duration_s": 0.10010000000000119,
+        "keyframes": 1
+      },
+      {
+        "start_s": 18.7187,
+        "end_s": 19.3193,
+        "duration_s": 0.6006,
+        "keyframes": 6
+      },
+      {
+        "start_s": 19.5195,
+        "end_s": 19.8198,
+        "duration_s": 0.3003,
+        "keyframes": 3
+      },
+      {
+        "start_s": 20.1201,
+        "end_s": 20.5205,
+        "duration_s": 0.40039999999999765,
+        "keyframes": 4
+      },
+      {
+        "start_s": 22.1221,
+        "end_s": 22.2222,
+        "duration_s": 0.10010000000000119,
+        "keyframes": 1
+      },
+      {
+        "start_s": 23.023,
+        "end_s": 23.1231,
+        "duration_s": 0.10010000000000119,
+        "keyframes": 1
+      },
+      {
+        "start_s": 23.3233,
+        "end_s": 23.4234,
+        "duration_s": 0.10010000000000119,
+        "keyframes": 1
+      },
+      {
+        "start_s": 23.6236,
+        "end_s": 23.8238,
+        "duration_s": 0.20019999999999882,
+        "keyframes": 2
+      },
+      {
+        "start_s": 24.2242,
+        "end_s": 24.4244,
+        "duration_s": 0.20019999999999882,
+        "keyframes": 2
+      },
+      {
+        "start_s": 24.5245,
+        "end_s": 24.7247,
+        "duration_s": 0.20019999999999882,
+        "keyframes": 2
+      },
+      {
+        "start_s": 26.1261,
+        "end_s": 26.3263,
+        "duration_s": 0.20019999999999882,
+        "keyframes": 2
+      },
+      {
+        "start_s": 26.4264,
+        "end_s": 26.7267,
+        "duration_s": 0.3003,
+        "keyframes": 3
+      },
+      {
+        "start_s": 27.1271,
+        "end_s": 27.3273,
+        "duration_s": 0.20020000000000238,
+        "keyframes": 2
+      },
+      {
+        "start_s": 27.4274,
+        "end_s": 27.5275,
+        "duration_s": 0.10010000000000119,
+        "keyframes": 1
+      },
+      {
+        "start_s": 28.028,
+        "end_s": 28.2282,
+        "duration_s": 0.20020000000000238,
+        "keyframes": 2
+      },
+      {
+        "start_s": 29.8298,
+        "end_s": 38.2382,
+        "duration_s": 8.4084,
+        "keyframes": 84
+      },
+      {
+        "start_s": 38.5385,
+        "end_s": 39.7397,
+        "duration_s": 1.2012,
+        "keyframes": 12
+      },
+      {
+        "start_s": 40.04,
+        "end_s": 40.3403,
+        "duration_s": 0.3003,
+        "keyframes": 3
+      },
+      {
+        "start_s": 40.4404,
+        "end_s": 40.5405,
+        "duration_s": 0.10010000000000474,
+        "keyframes": 1
+      },
+      {
+        "start_s": 41.2412,
+        "end_s": 41.9419,
+        "duration_s": 0.7006999999999977,
+        "keyframes": 7
+      },
+      {
+        "start_s": 42.8428,
+        "end_s": 43.5435,
+        "duration_s": 0.7007000000000048,
+        "keyframes": 7
+      },
+      {
+        "start_s": 44.1441,
+        "end_s": 46.6466,
+        "duration_s": 2.5024999999999977,
+        "keyframes": 25
+      },
+      {
+        "start_s": 46.7467,
+        "end_s": 46.8468,
+        "duration_s": 0.10010000000000474,
+        "keyframes": 1
+      },
+      {
+        "start_s": 47.6476,
+        "end_s": 47.7477,
+        "duration_s": 0.10010000000000474,
+        "keyframes": 1
+      },
+      {
+        "start_s": 48.048,
+        "end_s": 48.2482,
+        "duration_s": 0.20019999999999527,
+        "keyframes": 2
+      },
+      {
+        "start_s": 51.1511,
+        "end_s": 51.2512,
+        "duration_s": 0.10009999999999764,
+        "keyframes": 1
+      },
+      {
+        "start_s": 51.3513,
+        "end_s": 51.5515,
+        "duration_s": 0.20019999999999527,
+        "keyframes": 2
+      },
+      {
+        "start_s": 51.6516,
+        "end_s": 51.8518,
+        "duration_s": 0.20019999999999527,
+        "keyframes": 2
+      },
+      {
+        "start_s": 54.054,
+        "end_s": 54.4544,
+        "duration_s": 0.40039999999999765,
+        "keyframes": 4
+      },
+      {
+        "start_s": 54.5545,
+        "end_s": 54.7547,
+        "duration_s": 0.20020000000000238,
+        "keyframes": 2
+      }
+    ]
+  },
+  "visual_features": {
+    "min": 1953.0,
+    "median": 2971.0,
+    "max": 4000.0,
+    "zero_keyframes": 0,
+    "meaning": "Logged tracked keypoint count; not an independent tracking-success flag"
+  },
+  "short_trail": {
+    "rule": "Trailing 1 s TCP arc length < 0.01 m at keyframes >= 1 s",
+    "keyframes": 0,
+    "meaning": "Display-scale heuristic; not a missing trajectory"
+  },
+  "screenshots": {
+    "41.0": {
+      "keyframe_s": 40.9409,
+      "observed_anchor_ids": [
+        0,
+        1
+      ],
+      "pose_sample_s": 41.000428,
+      "tracked_keypoints": [
+        3044.0
+      ],
+      "front_rmse_px": [
+        1.2519915001580606
+      ],
+      "tcp_arc_length_previous_1s_m": 0.3575203051826872
+    },
+    "43.0": {
+      "keyframe_s": 42.9429,
+      "observed_anchor_ids": [
+        0
+      ],
+      "pose_sample_s": 43.00002,
+      "tracked_keypoints": [
+        4000.0
+      ],
+      "front_rmse_px": [
+        2.000089331289962
+      ],
+      "tcp_arc_length_previous_1s_m": 0.38231402362005085
+    }
+  },
+  "state_right": {
+    "samples": 4359,
+    "first_s": 3.09,
+    "last_s": 46.67,
+    "median_period_ms": 9.999999999999787,
+    "max_period_ms": 10.000000000005116,
+    "non_increasing_steps": 0,
+    "nonfinite_rows": 0,
+    "gap_rule": "dt > 2 * median(dt); internal intervals only",
+    "internal_gaps": []
+  },
+  "no_anchor_in_state_window": {
+    "keyframes": 436,
+    "missing_keyframes": 63,
+    "missing_percent": 14.449541284403669,
+    "episodes": 27,
+    "longest_s": 2.0020000000000024,
+    "missing_hold_s": 6.3062999990000215,
+    "runs": [
+      {
+        "start_s": 18.5185,
+        "end_s": 18.6186,
+        "duration_s": 0.10010000000000119,
+        "keyframes": 1
+      },
+      {
+        "start_s": 18.7187,
+        "end_s": 18.9189,
+        "duration_s": 0.20020000000000238,
+        "keyframes": 2
+      },
+      {
+        "start_s": 19.019,
+        "end_s": 19.3193,
+        "duration_s": 0.3003,
+        "keyframes": 3
+      },
+      {
+        "start_s": 19.6196,
+        "end_s": 19.8198,
+        "duration_s": 0.20020000000000238,
+        "keyframes": 2
+      },
+      {
+        "start_s": 20.2202,
+        "end_s": 20.3203,
+        "duration_s": 0.10010000000000119,
+        "keyframes": 1
+      },
+      {
+        "start_s": 23.023,
+        "end_s": 23.1231,
+        "duration_s": 0.10010000000000119,
+        "keyframes": 1
+      },
+      {
+        "start_s": 23.3233,
+        "end_s": 23.4234,
+        "duration_s": 0.10010000000000119,
+        "keyframes": 1
+      },
+      {
+        "start_s": 24.5245,
+        "end_s": 24.7247,
+        "duration_s": 0.20019999999999882,
+        "keyframes": 2
+      },
+      {
+        "start_s": 26.1261,
+        "end_s": 26.3263,
+        "duration_s": 0.20019999999999882,
+        "keyframes": 2
+      },
+      {
+        "start_s": 26.5265,
+        "end_s": 26.6266,
+        "duration_s": 0.10010000000000119,
+        "keyframes": 1
+      },
+      {
+        "start_s": 27.1271,
+        "end_s": 27.3273,
+        "duration_s": 0.20020000000000238,
+        "keyframes": 2
+      },
+      {
+        "start_s": 33.533499999,
+        "end_s": 33.6336,
+        "duration_s": 0.10010000100000127,
+        "keyframes": 1
+      },
+      {
+        "start_s": 33.7337,
+        "end_s": 33.833799999,
+        "duration_s": 0.1000999990000011,
+        "keyframes": 1
+      },
+      {
+        "start_s": 34.034,
+        "end_s": 34.134099999,
+        "duration_s": 0.1000999990000011,
+        "keyframes": 1
+      },
+      {
+        "start_s": 34.2342,
+        "end_s": 34.3343,
+        "duration_s": 0.10009999999999764,
+        "keyframes": 1
+      },
+      {
+        "start_s": 35.6356,
+        "end_s": 35.7357,
+        "duration_s": 0.10010000000000474,
+        "keyframes": 1
+      },
+      {
+        "start_s": 36.036,
+        "end_s": 36.2362,
+        "duration_s": 0.20019999999999527,
+        "keyframes": 2
+      },
+      {
+        "start_s": 36.3363,
+        "end_s": 36.4364,
+        "duration_s": 0.10009999999999764,
+        "keyframes": 1
+      },
+      {
+        "start_s": 36.5365,
+        "end_s": 36.6366,
+        "duration_s": 0.10010000000000474,
+        "keyframes": 1
+      },
+      {
+        "start_s": 36.8368,
+        "end_s": 36.9369,
+        "duration_s": 0.10010000000000474,
+        "keyframes": 1
+      },
+      {
+        "start_s": 38.5385,
+        "end_s": 38.9389,
+        "duration_s": 0.40039999999999765,
+        "keyframes": 4
+      },
+      {
+        "start_s": 39.1391,
+        "end_s": 39.3393,
+        "duration_s": 0.20020000000000238,
+        "keyframes": 2
+      },
+      {
+        "start_s": 39.4394,
+        "end_s": 39.7397,
+        "duration_s": 0.3003,
+        "keyframes": 3
+      },
+      {
+        "start_s": 40.04,
+        "end_s": 40.1401,
+        "duration_s": 0.10009999999999764,
+        "keyframes": 1
+      },
+      {
+        "start_s": 41.3413,
+        "end_s": 41.7417,
+        "duration_s": 0.40040000000000475,
+        "keyframes": 4
+      },
+      {
+        "start_s": 44.4444,
+        "end_s": 44.5445,
+        "duration_s": 0.10009999999999764,
+        "keyframes": 1
+      },
+      {
+        "start_s": 44.6446,
+        "end_s": 46.6466,
+        "duration_s": 2.0020000000000024,
+        "keyframes": 20
+      }
+    ]
+  },
+  "opening": {
+    "samples": 4359,
+    "first_s": 3.09,
+    "last_s": 46.67,
+    "median_period_ms": 9.999999999999787,
+    "max_period_ms": 10.000000000005116,
+    "non_increasing_steps": 0,
+    "nonfinite_rows": 0,
+    "gap_rule": "dt > 2 * median(dt); internal intervals only",
+    "internal_gaps": [],
+    "source": "logs/014-processing/window50/state_s8_r100/20261116_192018_IAQEB2604VWWN7.rrd",
+    "entity": "state/right/opening",
+    "arrow_type": "list<item: double>",
+    "unit": "rad",
+    "normalized": false,
+    "definition": "(left_finger_angle - right_finger_angle) / 2",
+    "sign": "increasing opens; zero is the URDF joint reference",
+    "min_rad": -0.14478911390056076,
+    "max_rad": 0.3517743096685546
+  },
+  "outputs": {
+    "layer": "logs/014-diagnostics/diagnostics.rrd",
+    "blueprint": "logs/014-diagnostics/imu-dashboard.rbl"
+  },
+  "validation": {
+    "status": "passed",
+    "independent_anchor_tag_ids_equal_ray_classification": true,
+    "opening_roundtrip_exact_float64": true,
+    "anchor_scalar_roundtrip_exact": true,
+    "official_fit_anchor_obs": 502,
+    "observed_keyframes": 502,
+    "core_pipeline_unchanged_from_HEAD": true,
+    "core_sha256": {
+      "src/specialist/record/base.py": "607e1f8501726467dbb6c7c3a6b0d300fb00c0a36ad4f7bb977d16392f859f97",
+      "src/specialist/vi_ba/highrate.py": "296c52ed1c5d8f2dd86354a0c684079cf6d70c8ca57242527525a21d3e178692",
+      "src/specialist/vi_ba/viz.py": "5001a4511bc61244c7c5aa17353f2d225775b6715f733dfd64f2aa75f43d3afe",
+      "src/specialist/vi_ba/blueprint.py": "80d2975bcaa509a2f30c0b6180b0c0d372b365344afdd87d9c9e934f33f998b0",
+      "packages/specialist_dataset/src/specialist_dataset/state.py": "9c44428ccd888a2bbcf17e8f484d2886a557b2eb2b37906e447e432d5c2383b1",
+      "packages/specialist_dataset/src/specialist_dataset/layer.py": "aa463914c4fe9e61c3470dcf85a9a7ddb2f19eb3173d0810d85917a7cf9d1bf6"
+    },
+    "limits": "Data continuity is not ground-truth tracking accuracy; no GUI frame-drop frequency is inferred."
+  },
+  "review": {
+    "date": "2026-11-16T20:54:59.237459+08:00",
+    "source_commit": "da29719cdbaa366df0599984068ad4553d9cc86d",
+    "tag_recheck": "logs/014-diagnostics/front-tag-recheck.json",
+    "sample_comparison": "logs/014-diagnostics/tag-comparison.jpg",
+    "screenshot": "logs/014-diagnostics/imu-opening-dashboard.png",
+    "native_viewer_log": "logs/014-diagnostics/viewer.log",
+    "live_style": "logs/014-diagnostics/live-style-update.json",
+    "full_path_rgba": [
+      80,
+      127,
+      160,
+      55
+    ],
+    "full_path_radius_m": 0.0004,
+    "red_trail_radius_m": 0.002,
+    "core_pipeline_modified": false,
+    "local_additions": [
+      "scripts/make_capture_dashboard.py",
+      "scripts/view_014.sh --imu",
+      "reports/specialist-official-demo.src.html"
+    ],
+    "opening_sources": [
+      "packages/specialist_dataset/src/specialist_dataset/state.py:opening",
+      "packages/specialist_dataset/src/specialist_dataset/schema.py:state_opening",
+      "packages/specialist_dataset/src/specialist_dataset/layer.py:hand_chunks",
+      "/home/xense/src/specialist_sim/src/specialist_sim/gripper.py:SHUT,OPEN"
+    ]
+  }
+}

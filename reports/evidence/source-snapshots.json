@@ -1,0 +1,26 @@
+{
+  "specialist-umi": {
+    "path": "/home/xense/src/specialist-umi",
+    "commit": "da29719cdbaa366df0599984068ad4553d9cc86d"
+  },
+  "specialist_description": {
+    "path": "/home/xense/src/specialist_description",
+    "commit": "56985a8b32018929b07f337bb0a5602e9b8d6f7a"
+  },
+  "specialist_sim": {
+    "path": "/home/xense/src/specialist_sim",
+    "commit": "9a6a4d44c845e162791e21992eb0766d8a981c32"
+  },
+  "feetech_driver": {
+    "path": "/home/xense/src/feetech_driver",
+    "commit": "5447891551a246f7c371cd96d3b794b67424c3e8"
+  },
+  "specialist_sdk": {
+    "path": "/home/xense/src/specialist_sdk",
+    "commit": "ad2b18144fdbe3fa99cfa27237aa02863a17bee4"
+  },
+  "insta360_driver": {
+    "path": "/home/xense/src/insta360_driver",
+    "commit": "22641e241c18857f345fbbf8643592194beefb7f"
+  }
+}

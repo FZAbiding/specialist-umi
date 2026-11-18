@@ -1,0 +1,1413 @@
+{
+  "date": "2026-11-18",
+  "method": "Signed bit_x/bit_y shifted by (total_width - width_at_border)/2. All 8 ID 0 PNG hashes and sampled codewords verified. Ignored cells come from the official alpha masks; the Custom center is hatched on the teaching diagram.",
+  "paper": "https://april.eecs.umich.edu/pdfs/krogius2019iros.pdf",
+  "size_reference": "https://chaitanyantr.github.io/apriltag.html",
+  "families": {
+    "tag16h5": {
+      "source": "https://github.com/AprilRobotics/apriltag/blob/master/tag16h5.c",
+      "nbits": 16,
+      "ncodes": 30,
+      "width_at_border": 6,
+      "total_width": 8,
+      "center_bits": 16,
+      "outer_bits": 0,
+      "rows": [
+        0,
+        0,
+        4,
+        4,
+        4,
+        4,
+        0,
+        0
+      ],
+      "id0_hex": "0x27c8",
+      "id1_hex": "0x31b6",
+      "id0_vs_1_hamming": 9,
+      "id0_readback": true,
+      "bit_xy_in_image_msb_first": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "center_ignored_cells": 0,
+      "ignored_cells": 0,
+      "official_png_sha256": "04dd4f53a6dbe78cd2c7bcb946711dfe428e6e5ea195cbb669c823d671c15872",
+      "equation": "4 × 4 = 16 位"
+    },
+    "tag25h9": {
+      "source": "https://github.com/AprilRobotics/apriltag/blob/master/tag25h9.c",
+      "nbits": 25,
+      "ncodes": 35,
+      "width_at_border": 7,
+      "total_width": 9,
+      "center_bits": 25,
+      "outer_bits": 0,
+      "rows": [
+        0,
+        0,
+        5,
+        5,
+        5,
+        5,
+        5,
+        0,
+        0
+      ],
+      "id0_hex": "0x156f1f4",
+      "id1_hex": "0x1f28cd5",
+      "id0_vs_1_hamming": 11,
+      "id0_readback": true,
+      "bit_xy_in_image_msb_first": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "center_ignored_cells": 0,
+      "ignored_cells": 0,
+      "official_png_sha256": "e83c7e911a9fa3bda232fd7176be5b080ef2b64d01724184b0ce50e17250ad1a",
+      "equation": "5 × 5 = 25 位"
+    },
+    "tag36h11": {
+      "source": "https://github.com/AprilRobotics/apriltag/blob/master/tag36h11.c",
+      "nbits": 36,
+      "ncodes": 587,
+      "width_at_border": 8,
+      "total_width": 10,
+      "center_bits": 36,
+      "outer_bits": 0,
+      "rows": [
+        0,
+        0,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        0,
+        0
+      ],
+      "id0_hex": "0xd7e00984b",
+      "id1_hex": "0xdda664ca7",
+      "id0_vs_1_hamming": 16,
+      "id0_readback": true,
+      "bit_xy_in_image_msb_first": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "center_ignored_cells": 0,
+      "ignored_cells": 0,
+      "official_png_sha256": "48d811f770fc3595aaf5650a5fd8007843e7fece1f8fdcb94e0f113b4c9ed0c6",
+      "equation": "6 × 6 = 36 位"
+    },
+    "tagStandard41h12": {
+      "source": "https://github.com/AprilRobotics/apriltag/blob/master/tagStandard41h12.c",
+      "nbits": 41,
+      "ncodes": 2115,
+      "width_at_border": 5,
+      "total_width": 9,
+      "center_bits": 9,
+      "outer_bits": 32,
+      "rows": [
+        9,
+        2,
+        2,
+        5,
+        5,
+        5,
+        2,
+        2,
+        9
+      ],
+      "id0_hex": "0x1bd8a64ad10",
+      "id1_hex": "0x1bdc4f3b2d5",
+      "id0_vs_1_hamming": 18,
+      "id0_readback": true,
+      "bit_xy_in_image_msb_first": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "center_ignored_cells": 0,
+      "ignored_cells": 0,
+      "official_png_sha256": "ad5bc161c157634f05afcfd3cfba34334b9303609dd3afc9c000b86e031da02a",
+      "equation": "9 + 32 = 41 位"
+    },
+    "tagStandard52h13": {
+      "source": "https://github.com/AprilRobotics/apriltag/blob/master/tagStandard52h13.c",
+      "nbits": 52,
+      "ncodes": 48714,
+      "width_at_border": 6,
+      "total_width": 10,
+      "center_bits": 16,
+      "outer_bits": 36,
+      "rows": [
+        10,
+        2,
+        2,
+        6,
+        6,
+        6,
+        6,
+        2,
+        2,
+        10
+      ],
+      "id0_hex": "0x4064a19651ff1",
+      "id1_hex": "0x4064a53f425b6",
+      "id0_vs_1_hamming": 14,
+      "id0_readback": true,
+      "bit_xy_in_image_msb_first": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          9,
+          2
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "center_ignored_cells": 0,
+      "ignored_cells": 0,
+      "official_png_sha256": "9358900c0f4512e3c8abd5bfae93e30234194c7c24f2cc9c90c2e64316a8829d",
+      "equation": "16 + 36 = 52 位"
+    },
+    "tagCircle21h7": {
+      "source": "https://github.com/AprilRobotics/apriltag/blob/master/tagCircle21h7.c",
+      "nbits": 21,
+      "ncodes": 38,
+      "width_at_border": 5,
+      "total_width": 9,
+      "center_bits": 9,
+      "outer_bits": 12,
+      "rows": [
+        3,
+        0,
+        0,
+        5,
+        5,
+        5,
+        0,
+        0,
+        3
+      ],
+      "id0_hex": "0x157863",
+      "id1_hex": "0x47e28",
+      "id0_vs_1_hamming": 8,
+      "id0_readback": true,
+      "bit_xy_in_image_msb_first": [
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "center_ignored_cells": 0,
+      "ignored_cells": 20,
+      "official_png_sha256": "6aa5400c41d31447ee5db7212df3a772170c2037c21b1eccbb9bd7c607c3c8f5",
+      "equation": "9 + 12 = 21 位"
+    },
+    "tagCircle49h12": {
+      "source": "https://github.com/AprilRobotics/apriltag/blob/master/tagCircle49h12.c",
+      "nbits": 49,
+      "ncodes": 65535,
+      "width_at_border": 5,
+      "total_width": 11,
+      "center_bits": 9,
+      "outer_bits": 40,
+      "rows": [
+        3,
+        7,
+        2,
+        2,
+        7,
+        7,
+        7,
+        2,
+        2,
+        7,
+        3
+      ],
+      "id0_hex": "0xc6c921d8614a",
+      "id1_hex": "0xc6c95c67670f",
+      "id0_vs_1_hamming": 18,
+      "id0_readback": true,
+      "bit_xy_in_image_msb_first": [
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          9,
+          2
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          4,
+          10
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "center_ignored_cells": 0,
+      "ignored_cells": 32,
+      "official_png_sha256": "b302da74f157026ef7ec35236472a321edce5154849e41860eb9281db2b56692",
+      "equation": "9 + 40 = 49 位"
+    },
+    "tagCustom48h12": {
+      "source": "https://github.com/AprilRobotics/apriltag/blob/master/tagCustom48h12.c",
+      "nbits": 48,
+      "ncodes": 42211,
+      "width_at_border": 6,
+      "total_width": 10,
+      "center_bits": 12,
+      "outer_bits": 36,
+      "rows": [
+        10,
+        2,
+        2,
+        6,
+        4,
+        4,
+        6,
+        2,
+        2,
+        10
+      ],
+      "id0_hex": "0xd6c8ae76dff0",
+      "id1_hex": "0xd6c8e905e5b5",
+      "id0_vs_1_hamming": 16,
+      "id0_readback": true,
+      "bit_xy_in_image_msb_first": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          9,
+          2
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "center_ignored_cells": 4,
+      "ignored_cells": 4,
+      "official_png_sha256": "35dd540f4051c2aec61dcb619c05d6fcf711aa5e79da05cb4b2aa7a8d1900910",
+      "equation": "12 + 36 = 48 位"
+    }
+  },
+  "image_source": "Official AprilRobotics/apriltag-imgs ID 0 images; file hashes and detector readback are recorded in tag-families.json.",
+  "report_version": "v2026.11.18.rc.2",
+  "verification": {
+    "official_id0_detections": 8,
+    "hamming_corrections_each": 0,
+    "left_diagram_cell_centers_match_official_on_white": 8,
+    "right_diagram_dot_positions_match_codebook": 8,
+    "png_panels_match_atlas_and_report": 8
+  }
+}

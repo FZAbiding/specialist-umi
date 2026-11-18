@@ -1,0 +1,204 @@
+{
+  "checked": "2026-11-17",
+  "classical_root_C_family_count_on_official_tree": 9,
+  "official_tree_additional_family": "tag36h10; not exposed by this installed Python wrapper",
+  "scope": "Eight predefined families exposed by installed pupil-apriltags; official source tree also has tag36h10 and ArUco support; custom families mean no universal fixed total",
+  "pupil_apriltags_version": "1.0.4.post11",
+  "image_provenance": "Official AprilRobotics/apriltag-imgs ID 0 PNGs. Gallery composites transparent cells on white. bitmap_sha256 hashes composited grayscale pixels; official_png_sha256 hashes original bytes.",
+  "standard41_bitmap_matches_previously_downloaded_official_image": true,
+  "family_sources": "https://github.com/AprilRobotics/apriltag",
+  "families": [
+    {
+      "family": "tag16h5",
+      "nbits": 16,
+      "h": 5,
+      "ncodes": 30,
+      "width_at_border": 6,
+      "total_width": 8,
+      "reversed_border": false,
+      "image_path": "reports/assets/tag16h5-id0.png",
+      "bitmap_sha256": "218b8d6f34b010ffa9914d68947fc32ca9deca4505dc519374c798ff7767d76b",
+      "source_url": "https://github.com/AprilRobotics/apriltag/blob/master/tag16h5.c",
+      "official_image_url": "https://raw.githubusercontent.com/AprilRobotics/apriltag-imgs/master/tag16h5/tag16_05_00000.png",
+      "official_png_sha256": "04dd4f53a6dbe78cd2c7bcb946711dfe428e6e5ea195cbb669c823d671c15872",
+      "id0_word_hex": "0x27c8",
+      "detected_id": 0,
+      "detected_hamming": 0
+    },
+    {
+      "family": "tag25h9",
+      "nbits": 25,
+      "h": 9,
+      "ncodes": 35,
+      "width_at_border": 7,
+      "total_width": 9,
+      "reversed_border": false,
+      "image_path": "reports/assets/tag25h9-id0.png",
+      "bitmap_sha256": "62f0c94e1935ab4bf71acdd902926702aacd2a709d6a645ee211adc7811cfd49",
+      "source_url": "https://github.com/AprilRobotics/apriltag/blob/master/tag25h9.c",
+      "official_image_url": "https://raw.githubusercontent.com/AprilRobotics/apriltag-imgs/master/tag25h9/tag25_09_00000.png",
+      "official_png_sha256": "e83c7e911a9fa3bda232fd7176be5b080ef2b64d01724184b0ce50e17250ad1a",
+      "id0_word_hex": "0x156f1f4",
+      "detected_id": 0,
+      "detected_hamming": 0
+    },
+    {
+      "family": "tag36h11",
+      "nbits": 36,
+      "h": 11,
+      "ncodes": 587,
+      "width_at_border": 8,
+      "total_width": 10,
+      "reversed_border": false,
+      "image_path": "reports/assets/tag36h11-id0.png",
+      "bitmap_sha256": "cf1827e5deec526d5db265a08ff3875d0948f48b3f1649c1717ab345b787aa45",
+      "source_url": "https://github.com/AprilRobotics/apriltag/blob/master/tag36h11.c",
+      "official_image_url": "https://raw.githubusercontent.com/AprilRobotics/apriltag-imgs/master/tag36h11/tag36_11_00000.png",
+      "official_png_sha256": "48d811f770fc3595aaf5650a5fd8007843e7fece1f8fdcb94e0f113b4c9ed0c6",
+      "id0_word_hex": "0xd7e00984b",
+      "detected_id": 0,
+      "detected_hamming": 0
+    },
+    {
+      "family": "tagStandard41h12",
+      "nbits": 41,
+      "h": 12,
+      "ncodes": 2115,
+      "width_at_border": 5,
+      "total_width": 9,
+      "reversed_border": true,
+      "image_path": "reports/assets/tagStandard41h12-id0.png",
+      "bitmap_sha256": "bd155e63d3cb3ec4e2fd650586977c39d21b452e445887c467220625790858ff",
+      "source_url": "https://github.com/AprilRobotics/apriltag/blob/master/tagStandard41h12.c",
+      "official_image_url": "https://raw.githubusercontent.com/AprilRobotics/apriltag-imgs/master/tagStandard41h12/tag41_12_00000.png",
+      "official_png_sha256": "ad5bc161c157634f05afcfd3cfba34334b9303609dd3afc9c000b86e031da02a",
+      "id0_word_hex": "0x1bd8a64ad10",
+      "detected_id": 0,
+      "detected_hamming": 0
+    },
+    {
+      "family": "tagStandard52h13",
+      "nbits": 52,
+      "h": 13,
+      "ncodes": 48714,
+      "width_at_border": 6,
+      "total_width": 10,
+      "reversed_border": true,
+      "image_path": "reports/assets/tagStandard52h13-id0.png",
+      "bitmap_sha256": "bdb486fdb078a88454de1709502db605940b292d3c30f093c51124bbc8a524d2",
+      "source_url": "https://github.com/AprilRobotics/apriltag/blob/master/tagStandard52h13.c",
+      "official_image_url": "https://raw.githubusercontent.com/AprilRobotics/apriltag-imgs/master/tagStandard52h13/tag52_13_00000.png",
+      "official_png_sha256": "9358900c0f4512e3c8abd5bfae93e30234194c7c24f2cc9c90c2e64316a8829d",
+      "id0_word_hex": "0x4064a19651ff1",
+      "detected_id": 0,
+      "detected_hamming": 0
+    },
+    {
+      "family": "tagCircle21h7",
+      "nbits": 21,
+      "h": 7,
+      "ncodes": 38,
+      "width_at_border": 5,
+      "total_width": 9,
+      "reversed_border": true,
+      "image_path": "reports/assets/tagCircle21h7-id0.png",
+      "bitmap_sha256": "70d72462d1f5e536d953b0e33e3e4d7a8f251b59627972c9c93a097a0056924e",
+      "source_url": "https://github.com/AprilRobotics/apriltag/blob/master/tagCircle21h7.c",
+      "official_image_url": "https://raw.githubusercontent.com/AprilRobotics/apriltag-imgs/master/tagCircle21h7/tag21_07_00000.png",
+      "official_png_sha256": "6aa5400c41d31447ee5db7212df3a772170c2037c21b1eccbb9bd7c607c3c8f5",
+      "id0_word_hex": "0x157863",
+      "detected_id": 0,
+      "detected_hamming": 0
+    },
+    {
+      "family": "tagCircle49h12",
+      "nbits": 49,
+      "h": 12,
+      "ncodes": 65535,
+      "width_at_border": 5,
+      "total_width": 11,
+      "reversed_border": true,
+      "image_path": "reports/assets/tagCircle49h12-id0.png",
+      "bitmap_sha256": "d24653e40e4c6a5d9191c995ffd334a6fbb60bc698632baa6f6615f695d11af6",
+      "source_url": "https://github.com/AprilRobotics/apriltag/blob/master/tagCircle49h12.c",
+      "official_image_url": "https://raw.githubusercontent.com/AprilRobotics/apriltag-imgs/master/tagCircle49h12/tag49_12_00000.png",
+      "official_png_sha256": "b302da74f157026ef7ec35236472a321edce5154849e41860eb9281db2b56692",
+      "id0_word_hex": "0xc6c921d8614a",
+      "detected_id": 0,
+      "detected_hamming": 0
+    },
+    {
+      "family": "tagCustom48h12",
+      "nbits": 48,
+      "h": 12,
+      "ncodes": 42211,
+      "width_at_border": 6,
+      "total_width": 10,
+      "reversed_border": true,
+      "image_path": "reports/assets/tagCustom48h12-id0.png",
+      "bitmap_sha256": "0ff0b86c8de20c752c9b23f2e9a96dbeb841d32bed7f32b4decc1b4e68e637bd",
+      "source_url": "https://github.com/AprilRobotics/apriltag/blob/master/tagCustom48h12.c",
+      "official_image_url": "https://raw.githubusercontent.com/AprilRobotics/apriltag-imgs/master/tagCustom48h12/tag48_12_00000.png",
+      "official_png_sha256": "35dd540f4051c2aec61dcb619c05d6fcf711aa5e79da05cb4b2aa7a8d1900910",
+      "id0_word_hex": "0xd6c8ae76dff0",
+      "detected_id": 0,
+      "detected_hamming": 0
+    }
+  ],
+  "frame_checks": {
+    "world_eef_rows": 4359,
+    "determinant_max_error": 8.881784197001252e-16,
+    "cross_product_max_error": 8.881784197001252e-16,
+    "official_T_specialist_R": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0
+      ]
+    ],
+    "convention_rotation_determinant": 1.0
+  },
+  "project_family": "tagStandard41h12",
+  "project_sizes": {
+    "anchor_inner_m": 0.1,
+    "gripper_inner_m": 0.01,
+    "anchor_ids": [
+      0,
+      1
+    ],
+    "right_gripper_ids": [
+      2003,
+      2004,
+      2005
+    ]
+  },
+  "source_tree_commit_observed": "b7c0ebe9aa20f82ec7a828579004f9e706bfecd9",
+  "native_library_provenance": "Family parameters read from the installed _ApriltagFamily struct. Final eight ID 0 bitmaps use AprilRobotics/apriltag-imgs, decoded against the installed codebooks.",
+  "coordinate_sources": [
+    "packages/specialist_dataset/src/specialist_dataset/fiducials.py",
+    "src/specialist/vi_ba/tag_detection.py",
+    "src/specialist/vi_ba/compose.py",
+    "https://github.com/AprilRobotics/apriltag#coordinate-system"
+  ],
+  "report_version": "v2026.11.17.rc.3",
+  "verification": {
+    "family_count": 8,
+    "project_standard41_bitmap_matches_official": true,
+    "coordinate_numeric_checks": "passed, all 4359 EEF rotations",
+    "report_render": "50 figures, 390/1280 checks passed; main and three focused sections reviewed",
+    "code_tests": "391 passed is prior core validation; no solver/source change this turn, no new full suite required",
+    "commit": "no commit/push; prior user instruction retained",
+    "official_images": "All 8 ID 0 words match the installed codebook; all 8 decoded with zero corrections on digital images on a white background."
+  },
+  "images_verified": "2026-11-18"
+}

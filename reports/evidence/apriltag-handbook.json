@@ -1,0 +1,34 @@
+{
+  "source_report": "reports/specialist-official-demo.src.html",
+  "source_report_version": "v2026.11.18.rc.2",
+  "date": "2026-11-18",
+  "files": {
+    "reports/apriltag-handbook.html": {
+      "bytes": 991491,
+      "sha256": "6aaebde3a1bf526a8e1b32bbffcd7616230fcf048592918bbe5d57b430dd2c4a"
+    },
+    "reports/apriltag-handbook.pdf": {
+      "bytes": 1426346,
+      "sha256": "899287febb3ff2d2a26191af8ae1bb16a6eeca2fe42ef82b6d04d43e6cd27942"
+    }
+  },
+  "html": {
+    "embedded_figures": 13,
+    "embedded_family_plates_match_artwork": 8,
+    "external_load_dependencies": 0,
+    "section_links_validated": 12
+  },
+  "pdf": {
+    "paper": "A4 portrait",
+    "pages": 9,
+    "family_pages": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "generated_offline": true,
+    "eight_family_captions_read_back": true,
+    "visual_pagination_reviewed": true
+  }
+}

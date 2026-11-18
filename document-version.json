@@ -1,10 +1,18 @@
 {
-  "version": "v2026.11.17.rc.1",
+  "version": "v2026.11.18.rc.3",
   "status": "release-candidate",
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "main_report": "reports/specialist-official-demo.html",
   "main_source": "reports/specialist-official-demo.src.html",
-  "scope": "官方复现、初始基准与动作导出、AprilTag教学及后续验收计划",
+  "scope": "014 出厂标定、因果动作、仿真和 01 离线检查；AprilTag 八种图与独立手册；双手贴码、采集、共享初始系、Rerun 回放及公开复刻核查。真实双手样片待采。",
   "pdf_update_policy": "on_explicit_user_request_only",
-  "formal_release_created": false
+  "formal_release_created": false,
+  "supplements": {
+    "apriltag-handbook": {
+      "edition": "2026-11-18",
+      "derived_from": "v2026.11.18.rc.2",
+      "html": "reports/apriltag-handbook.html",
+      "pdf": "reports/apriltag-handbook.pdf"
+    }
+  }
 }

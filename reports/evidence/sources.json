@@ -120,5 +120,21 @@
     "local": "reports/evidence/014-pose-pipeline.json",
     "scope": "完整原片求解；前50秒派生base复用完整轨迹；原始收尾不合规，未验证外部精度",
     "checked": "2026-11-16"
+  },
+  {
+    "id": "W1",
+    "kind": "independent-print-tool",
+    "title": "AprilTag Generator — Chaithanya Krishna Bodduluri",
+    "url": "https://chaitanyantr.github.io/apriltag.html",
+    "scope": "6 个可生成 family、8 行容量表、SVG 与 A4 打印；实际尺寸按工程手册和尺量核对",
+    "checked": "2026-11-18"
+  },
+  {
+    "id": "W2",
+    "kind": "public-replication",
+    "title": "第三方连续录制实验与真实片段回读",
+    "url": "https://github.com/dreaming-ops/specialist/blob/44f15992c3a4a77700ec66e9e7ffa41c76846496/docs/continuous-episodes.md",
+    "scope": "独立分支作者自报，官方与本地核查见 bimanual-review.json",
+    "checked": "2026-11-18"
   }
 ]

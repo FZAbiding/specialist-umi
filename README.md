@@ -2,18 +2,24 @@
 
 本工程是 [specialist-ai/specialist](https://github.com/specialist-ai/specialist) 的开发 fork。先跑通官方采集、重建与仿真，再验证初始姿态重定向，最后迁移01非夕平台和适配π0.5。
 
-[中文完整报告](reports/specialist-official-demo.html) · [动作坐标与字段](reports/specialist-official-demo.html#action-contract) · [AprilTag原理、公式与交互demo](reports/specialist-official-demo.html#apriltag-course) · [标定与定位的区别](reports/specialist-official-demo.html#calibration-vs-localization) · [剩余复现与计划](reports/specialist-official-demo.html#next)
+[中文完整报告](reports/specialist-official-demo.html) · [动作坐标与字段](reports/specialist-official-demo.html#action-contract) · [AprilTag原理、公式与交互demo](reports/specialist-official-demo.html#apriltag-course) · [标签family与规格](reports/specialist-official-demo.html#tag-family-guide) · [八种AprilTag逐格示意图](reports/specialist-official-demo.html#tag-bit-layout) · [右手坐标约定](reports/specialist-official-demo.html#tag-handedness) · [标定与定位的区别](reports/specialist-official-demo.html#calibration-vs-localization) · [剩余复现与计划](reports/specialist-official-demo.html#next)
+
+AprilTag 独立图解手册：[离线 HTML](reports/apriltag-handbook.html) · [A4 PDF](reports/apriltag-handbook.pdf)。
+
+**第二套夹爪到手后**，从[双手首采手册](reports/specialist-official-demo.html#dual-capture)开始。按[工况矩阵](reports/specialist-official-demo.html#dual-matrix)拍左右手签名、尺量和交接，照[处理命令](reports/specialist-official-demo.html#dual-run)生成状态与[双手 Rerun 和仿真回放](reports/specialist-official-demo.html#dual-replay)。[公开复刻记录](reports/specialist-official-demo.html#public-progress) · [AprilTag 打印工具索引](reports/specialist-official-demo.html#apriltag-generator)。
 
 ## 当前已完成
 
-- mamba环境、官方重建与硬件SDK安装验证；本机完整测试384项通过（含新增几何/AprilTag demo测试13项），官方仿真81项通过，SDK58项通过、1项真实相机测试跳过。
+- mamba环境、官方重建与硬件SDK安装验证；本机完整测试391项通过（含动作几何/AprilTag demo 13项、因果图像/IK 7项），官方仿真81项通过，SDK58项通过、1项真实相机测试跳过。
 - 官方specialist_sim PickPlace脚本演示，落盘episode、视频与状态RRD；使用本地控制脚本，未训练策略。
 - 真实X3的014单右夹爪：INSV双镜头/IMU → base → estimate/viz → 有效state → world/initial/delta EEF。
 - 014有效状态为3.09–46.67秒，4359行100Hz状态；默认1步动作4358行。参考初始姿态取完整estimate的1.0秒静止段。
 - Rerun默认显示三维模型、淡蓝整段轨迹、红色近期轨迹、双鱼眼Tag框/ID、六轴IMU及开合折线。
-- AprilTag合成几何、错误尺寸、角点噪声实验及可选真实鱼眼PnP；EEF初始姿态重定向的数学示例。
+- AprilTag合成几何与初始重定向；新增原始INSV出厂MEI参数JSON导出，并与base RRD回读核对。
+- 真实014单右手完整驱动官方Floating仿真，生成原始鱼眼与CAD叠加视频；位置跟随误差P95约0.644mm，不代表真实定位精度。
+- 整理1306 JPEG与4356组因果图像—动作索引；01当前资产的4359目标已完成离线IK、速度和44个源碰撞几何检查，保留失败/接触标记。
 
-目前没有真实左夹爪数据，没有验证USB实时取流、舵机动作、机器人TCP/初始姿态标定或真实数据驱动01平台。未训练或部署π0.5。轨迹连续和低像素误差不等于外部定位精度已验收。
+目前没有真实左夹爪数据，没有验证USB实时取流、舵机动作、机器人TCP/初始姿态标定、01实机控制。01离线结果只是未标定的初始姿态映射候选，整段未达到执行条件。未训练或部署π0.5。轨迹连续和低像素误差不等于外部定位精度已验收。
 
 ## 用mamba安装与运行
 
@@ -67,6 +73,27 @@ python scripts/export_poses.py path/to/state.rrd --hand right \
 
 这些字段是本fork的几何协议，不是已完成的π0.5数据适配器。绝对/增量与EEF/关节是不同维度；openpi具体配置决定动作语义。CSV/NPZ也没有自动包含完整的训练图像与语言样本，训练适配要根据state中的图像真实时间进一步组装。
 
+## 训练前的数据与仿真检查入口
+
+```bash
+bash scripts/run_pretrain_checks.sh
+```
+
+输出在`logs/pretrain-20261117`：`factory-calibration.json`为真实出厂参数；`episode014/`含原始JPEG、完整位姿动作、因果样本索引和质量标记；`specialist-sim/replay-overlay.mp4`为官方单右手仿真叠加；`forward01/forward01-candidates.mp4`为01离线候选预览。
+
+独立提取标定，无需相机接USB或Insta360 Studio：
+
+```bash
+python scripts/export_calibration.py path/to/VID_..._00_014.insv \
+  --base path/to/base/SESSION.rrd --output logs/my-calibration.json
+```
+
+入口是`telemetry_parser.Parser(path).telemetry()[0]["Default"]["Metadata"]["offset_v3"]`；官方`parse_offset_v3`解码双镜头，`rescale/read_lens`转换到实际解码宽度。014厂家参考像素为11904×5952，每镜头原片2880×2880，缩放s=2×2880/11904；后镜头主点还需减去半幅偏移。ξ与畸变系数无量纲，不随缩放改变。导出是读取原有参数，不是重新标定。
+
+先把[采集协议模板](configs/capture_protocol.example.json)复制到ignored logs，填写实际尺量，再用`SPECIALIST_CAPTURE_PROTOCOL=logs/my-measurements.json bash scripts/run_pretrain_checks.sh`。未填写时仍生成软件产物，但物理尺度保持待验。质量阈值是复查触发器，不自动平滑/删帧。
+
+01只读当前相邻`xense-description`资产并复用`xense-description-sim/tools/build_flexiv_model.py`，所有派生文件在本工程logs。可设置`SPECIALIST_DESCRIPTION_ROOT`和`SPECIALIST_FORWARD_GENERATOR`指定来源；不修改外部资产仓库。4309/4359目标达到IK门槛，但有50个失败、394个超速区间、默认双指网格重叠及8帧新增手臂/电机接触。当前源台面无碰撞几何，UMI/TacCap工具轴与开合映射未标定，首有效状态偏离1秒初始参考约259.8mm，因此不会输出真机执行指令。
+
 ## 开发入口与检查
 
 先读[AGENTS.md](AGENTS.md)、[AGENT-STATUS.md](AGENT-STATUS.md)、[document-version.json](document-version.json)与[CHANGELOG.md](CHANGELOG.md)。官方流水线入口仍是convert.py、estimate.py、state.py；本地新增pose_actions.py、export_poses.py、make_capture_dashboard.py及demo脚本。
@@ -85,7 +112,7 @@ mamba run -n specialist-umi python tools/verify_report.py
 
 ## 后续顺序
 
-先规范重复采集与尺度检查，再做真实014单右手在specialist_sim中的重放；随后验证01平台的TCP轴、IK和碰撞，最后实现模型数据适配与闭环评测。初始姿态对齐是可行的数据约定，但不能替代工具轴定义、对象相对位置与可达性验证。
+当前先补尺量与独立任务采集，确认工具轴与开合映射；复查01默认双指碰撞网格，解决新增接触、连续IK/速度与初始过渡路径。真实单右手官方仿真已跑通。π0.5适配与训练留待用户后续安排。
 
 ---
 

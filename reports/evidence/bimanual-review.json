@@ -1,0 +1,77 @@
+{
+  "checked_at": "2026-11-18T20:30:09+08:00",
+  "scope": "Official repositories, org public issues, fork listing, public branch and project search. Third-party hardware results are author reports. GitHub Releases refers to the core repository only.",
+  "upstream": {
+    "core_head": "da29719cdbaa366df0599984068ad4553d9cc86d",
+    "core_commit_date_utc": "2026-11-08T23:07:01Z",
+    "core_github_releases_observed": 0,
+    "sim_head": "9a6a4d44c845e162791e21992eb0766d8a981c32",
+    "issues_checked": [
+      "https://github.com/specialist-ai/specialist/issues/21",
+      "https://github.com/specialist-ai/specialist/issues/20",
+      "https://github.com/specialist-ai/insta360_driver/issues/3",
+      "https://github.com/specialist-ai/insta360_driver/issues/1"
+    ],
+    "core_forks_in_api_page": 11,
+    "sources": [
+      "https://github.com/specialist-ai/specialist/commits/main/",
+      "https://github.com/specialist-ai/specialist/releases",
+      "https://github.com/specialist-ai/specialist/pull/19",
+      "https://github.com/specialist-ai/specialist/forks",
+      "https://specialist-ai.github.io/specialist-docs/scene/"
+    ]
+  },
+  "independent_fork": {
+    "owner": "dreaming-ops",
+    "branch": "feat/continuous-episodes",
+    "head": "44f15992c3a4a77700ec66e9e7ffa41c76846496",
+    "ahead_of_upstream": 10,
+    "behind_upstream": 0,
+    "reported_real_capture": "23 matching triple-tap groups; missed start marker reviewed manually; one reviewed episode reached state export. No external pose ground truth verified.",
+    "reported_generated_inputs": "458 software tests; two GPU generated-input smoke test; separate from real episode evidence",
+    "sources": [
+      "https://github.com/dreaming-ops/specialist/blob/44f15992c3a4a77700ec66e9e7ffa41c76846496/docs/continuous-episodes.md",
+      "https://github.com/dreaming-ops/specialist/blob/44f15992c3a4a77700ec66e9e7ffa41c76846496/docs/parallel-processing-validation.md",
+      "https://github.com/specialist-ai/specialist/compare/main...dreaming-ops:specialist:feat/continuous-episodes"
+    ]
+  },
+  "current_fork_local_checks": {
+    "real_014": {
+      "hands": {
+        "right": "cam00"
+      },
+      "views": 6,
+      "measured_overlay_rows": {
+        "/camera/cam00/front/inspection/tags": 573,
+        "/camera/cam00/front/inspection/tags/labels": 573,
+        "/camera/cam00/rear/inspection/tags": 573,
+        "/camera/cam00/rear/inspection/tags/labels": 573
+      }
+    },
+    "simulated_bimanual": {
+      "source": "official-demo/episodes/pick-place-demo.npz; sim-state --hands both --image-size 72 --supersample 1",
+      "state_rows_per_hand": 821,
+      "images_per_hand": 245,
+      "initial_separation_m": 0.19515094455389534,
+      "max_same_time_relative_transform_difference": 3.3306690738754696e-16,
+      "duration_s": 8.2,
+      "blueprint_readback": "11 views, verified four videos, left=cam01/right=cam00 hand-slot wiring, four vector IMU views and two opening views"
+    },
+    "limitations": "Second physical handheld and synchronized two-camera INSV were not available; dual on-device acceptance is pending."
+  },
+  "report_visual_checks": {
+    "figures": 62,
+    "viewport_widths": [
+      390,
+      1280
+    ],
+    "issues": 0
+  },
+  "preflight": {
+    "pytest": "391 passed, 14 warnings",
+    "ruff_check": "passed",
+    "ruff_format": "142 files",
+    "mypy": "74 source files",
+    "bash_syntax": "passed"
+  }
+}

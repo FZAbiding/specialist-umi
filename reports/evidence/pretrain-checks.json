@@ -1,0 +1,518 @@
+{
+  "checked": "2026-11-17T12:57:15.057634+08:00",
+  "version": "v2026.11.17.rc.2",
+  "scope": "Factory extraction, prepared single-hand data, official Floating replay and Forward-01 offline candidate audit; no pi05 training; no commit/push",
+  "calibration": {
+    "factory_reference_size": [
+      11904,
+      5952
+    ],
+    "decoded_lens_size": [
+      2880,
+      2880
+    ],
+    "offset_v3_length": 40,
+    "raw_to_decoded_scale": 0.4838709677419355,
+    "base_readback": {
+      "front": {
+        "parameter_max_abs_error": 0.0,
+        "raw_max_abs_error": 0.0,
+        "body_T_lens_max_abs_error": 1.0338889553512809e-09
+      },
+      "rear": {
+        "parameter_max_abs_error": 0.0,
+        "raw_max_abs_error": 0.0,
+        "body_T_lens_max_abs_error": 3.179364440469845e-08
+      }
+    },
+    "model_roundtrip_max_sin_angle_error": 5.184430714156088e-13,
+    "output": "logs/pretrain-20261117/factory-calibration.json",
+    "meaning": "Reading factory parameters, not new calibration or external accuracy validation"
+  },
+  "prepared_episode": {
+    "schema": "specialist-pretraining-episode-v1",
+    "kind": "prepared real episode, not a pi05 adapter or training run",
+    "hand": "right",
+    "source_state": "logs/014-processing/window50/state_s8_r100/20261116_192018_IAQEB2604VWWN7.rrd",
+    "source_state_sha256": "d41385feec432d32577839821e1b3a74684b26623184675d828c75e6ab769544",
+    "source_pose_sha256": "4a7d612867d27f8478b03962d702a57bee0a7330c0f20446c0cbdb85286e6232",
+    "state_rows": 4359,
+    "action_rows": 4358,
+    "image_rows": 1306,
+    "observation_action_samples": 4356,
+    "missing_past_image_action_rows": 2,
+    "image_association": "latest image at or before observation; never a future image",
+    "max_image_age_s": 0.03333333300000163,
+    "state_max_interval_s": 0.010000000000005116,
+    "review_interval_count": 70,
+    "review_opening_speed_count": 6,
+    "review_thresholds": {
+      "translation_speed_m_s": 2.0,
+      "rotation_speed_rad_s": 10.0,
+      "opening_speed_rad_s": 5.0,
+      "meaning": "Engineering review triggers, not calibrated hardware limits; flagged rows are retained"
+    },
+    "translation_speed_max_m_s": 2.1603546317245397,
+    "rotation_speed_max_rad_s": 17.98719214634683,
+    "opening_speed_max_rad_s": 5.279635617609659,
+    "physical_scale_status": "pending-ruler-measurement",
+    "measured_relative_size_errors": {},
+    "raw_end_tap_status": "014 original failed end position rule; explicit 50-second derived base used, raw preserved",
+    "cleaning": "No state smoothing, pose interpolation, review-row deletion or zero action padding applied",
+    "dataset_split": "By independent episode/session, not random neighboring frames",
+    "sample_index": "samples.csv",
+    "quality_index": "quality-flags.csv"
+  },
+  "official_sim_replay": {
+    "kind": "real capture driving official simulator, not external pose truth",
+    "source_hand": "right",
+    "state_rows": 4359,
+    "time_s": [
+      3.09,
+      46.67
+    ],
+    "physics_dt_s": 0.0008333333333333334,
+    "control_dt_s": 0.01,
+    "unstable": false,
+    "position_error_m": {
+      "median": 0.00017403101022701853,
+      "p95": 0.0006441401489350952,
+      "max": 0.0009309197103583923
+    },
+    "rotation_error_rad": {
+      "p95": 0.003570621502119996,
+      "max": 0.015019485622546389
+    },
+    "opening_error_rad": {
+      "p95": 0.007835693523285683,
+      "max": 0.0637341349218973
+    },
+    "video_frames": 1306,
+    "video_nearest_state_max_dt_s": 0.004999999999999893,
+    "episode": "logs/pretrain-20261117/specialist-sim/episodes/014-right-replay.npz",
+    "room_T_world_wxyz": [
+      1.4232504064182194e-12,
+      0.5302958568487516,
+      0.0016856625444943716,
+      -0.15178165025750692,
+      -0.0,
+      -0.0,
+      -0.9884140481827987
+    ],
+    "limits": [
+      "Unobserved left sim hand parked at [10,10,10]; no fabricated left capture",
+      "Empty room, no reconstructed objects or task success validation",
+      "Replay tracking error is not capture accuracy or real robot performance",
+      "Original opening radians are used without normalization; not hardware limit calibration"
+    ],
+    "video": "logs/pretrain-20261117/specialist-sim/replay-overlay.mp4"
+  },
+  "forward01": {
+    "kind": "uncalibrated initial-pose mapping, offline IK candidate audit; no hardware execution",
+    "rows": 4359,
+    "source_rows": 4359,
+    "stride": 1,
+    "source_poses_sha256": "4a7d612867d27f8478b03962d702a57bee0a7330c0f20446c0cbdb85286e6232",
+    "mapping": "P_T_eef(t) = P_T_eef_home @ inverse(W_T_human_initial) @ W_T_human(t)",
+    "mapping_status": "proposal; nominal TCP axes correspondence, not measured hand-eye/tool calibration",
+    "robot_initial": [
+      [
+        -0.1710080042569294,
+        -0.6486090837341848,
+        0.7416619977978947,
+        1.0715260090084011
+      ],
+      [
+        -0.344924849350956,
+        0.7445262878101171,
+        0.5715832879466543,
+        -0.2355260708309949
+      ],
+      [
+        -0.9229209667031535,
+        -0.1580723355213966,
+        -0.3510413450899035,
+        0.9746828341610119
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "human_initial": [
+      [
+        0.98369497284176,
+        -0.14339983651780683,
+        0.10853887456812675,
+        0.6029479982647233
+      ],
+      [
+        0.14278636314869037,
+        0.9896622247333249,
+        0.013443787957904685,
+        0.20278167476603295
+      ],
+      [
+        -0.10934466107048713,
+        0.0022732845296931457,
+        0.994001296414058,
+        -0.3290163353398338
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "initial_valid_state_displacement_m": 0.25984428201513043,
+    "ik_valid_count": 4309,
+    "ik_valid_fraction": 0.9885294792383574,
+    "position_error_m": {
+      "p50": 1.9819243045906654e-05,
+      "p95": 0.0007684540150627754,
+      "max": 0.043804252718958964
+    },
+    "rotation_error_deg": {
+      "p95": 0.24343985860985343,
+      "max": 58.42762294698128
+    },
+    "collision_frames": 4359,
+    "baseline_overlap_body_pairs": [
+      [
+        "left_tool_taccap_left_finger_link",
+        "left_tool_taccap_right_finger_link"
+      ],
+      [
+        "right_tool_taccap_left_finger_link",
+        "right_tool_taccap_right_finger_link"
+      ]
+    ],
+    "additional_to_start_collision_frames": 8,
+    "additional_contact_examples": [
+      {
+        "source_row": 4309,
+        "time_s": 46.18,
+        "pairs": [
+          [
+            "right_link4",
+            "right_tool_taccap_motor_link",
+            -0.0019483455212245245
+          ]
+        ]
+      },
+      {
+        "source_row": 4310,
+        "time_s": 46.19,
+        "pairs": [
+          [
+            "right_link4",
+            "right_tool_taccap_motor_link",
+            -0.0029594342433412867
+          ],
+          [
+            "right_link4",
+            "right_tool_taccap_motor_link",
+            -0.0029805958451748485
+          ]
+        ]
+      },
+      {
+        "source_row": 4311,
+        "time_s": 46.2,
+        "pairs": [
+          [
+            "right_link4",
+            "right_tool_taccap_motor_link",
+            -0.00338307767436388
+          ]
+        ]
+      },
+      {
+        "source_row": 4312,
+        "time_s": 46.21,
+        "pairs": [
+          [
+            "right_link4",
+            "right_tool_taccap_motor_link",
+            -0.002842734225897819
+          ],
+          [
+            "right_link4",
+            "right_tool_taccap_motor_link",
+            -0.003076755516707296
+          ]
+        ]
+      },
+      {
+        "source_row": 4313,
+        "time_s": 46.22,
+        "pairs": [
+          [
+            "right_link4",
+            "right_tool_taccap_motor_link",
+            -0.0026023408840570475
+          ]
+        ]
+      },
+      {
+        "source_row": 4314,
+        "time_s": 46.23,
+        "pairs": [
+          [
+            "right_link4",
+            "right_tool_taccap_motor_link",
+            -0.0037018089849489913
+          ],
+          [
+            "right_link4",
+            "right_tool_taccap_motor_link",
+            -0.003183942399329842
+          ]
+        ]
+      },
+      {
+        "source_row": 4315,
+        "time_s": 46.24,
+        "pairs": [
+          [
+            "right_link4",
+            "right_tool_taccap_motor_link",
+            -0.0035819281766775735
+          ]
+        ]
+      },
+      {
+        "source_row": 4316,
+        "time_s": 46.25,
+        "pairs": [
+          [
+            "right_link4",
+            "right_tool_taccap_motor_link",
+            -0.003073792707296925
+          ]
+        ]
+      }
+    ],
+    "baseline_overlap_interpretation": "Present already at unchanged platform home; not silently excluded or declared acceptable. Source collision meshes/allowed finger contacts need review.",
+    "ik_valid_without_detected_collision": 0,
+    "contact_examples": [
+      {
+        "source_row": 0,
+        "time_s": 3.09,
+        "pairs": [
+          [
+            "left_tool_taccap_left_finger_link",
+            "left_tool_taccap_right_finger_link",
+            -0.006690766037773503
+          ],
+          [
+            "left_tool_taccap_left_finger_link",
+            "left_tool_taccap_right_finger_link",
+            -0.006690765706933739
+          ],
+          [
+            "right_tool_taccap_left_finger_link",
+            "right_tool_taccap_right_finger_link",
+            -0.006690766037773564
+          ],
+          [
+            "right_tool_taccap_left_finger_link",
+            "right_tool_taccap_right_finger_link",
+            -0.006690765706933771
+          ]
+        ]
+      },
+      {
+        "source_row": 1,
+        "time_s": 3.1,
+        "pairs": [
+          [
+            "left_tool_taccap_left_finger_link",
+            "left_tool_taccap_right_finger_link",
+            -0.006690766037773503
+          ],
+          [
+            "left_tool_taccap_left_finger_link",
+            "left_tool_taccap_right_finger_link",
+            -0.006690765706933739
+          ],
+          [
+            "right_tool_taccap_left_finger_link",
+            "right_tool_taccap_right_finger_link",
+            -0.006690766037773503
+          ],
+          [
+            "right_tool_taccap_left_finger_link",
+            "right_tool_taccap_right_finger_link",
+            -0.006690765706933776
+          ]
+        ]
+      },
+      {
+        "source_row": 2,
+        "time_s": 3.11,
+        "pairs": [
+          [
+            "left_tool_taccap_left_finger_link",
+            "left_tool_taccap_right_finger_link",
+            -0.006690766037773503
+          ],
+          [
+            "left_tool_taccap_left_finger_link",
+            "left_tool_taccap_right_finger_link",
+            -0.006690765706933739
+          ],
+          [
+            "right_tool_taccap_left_finger_link",
+            "right_tool_taccap_right_finger_link",
+            -0.006690766037773582
+          ],
+          [
+            "right_tool_taccap_left_finger_link",
+            "right_tool_taccap_right_finger_link",
+            -0.0066907657069337646
+          ]
+        ]
+      },
+      {
+        "source_row": 3,
+        "time_s": 3.12,
+        "pairs": [
+          [
+            "left_tool_taccap_left_finger_link",
+            "left_tool_taccap_right_finger_link",
+            -0.006690766037773503
+          ],
+          [
+            "left_tool_taccap_left_finger_link",
+            "left_tool_taccap_right_finger_link",
+            -0.006690765706933739
+          ],
+          [
+            "right_tool_taccap_left_finger_link",
+            "right_tool_taccap_right_finger_link",
+            -0.006690766037773516
+          ],
+          [
+            "right_tool_taccap_left_finger_link",
+            "right_tool_taccap_right_finger_link",
+            -0.006690765706933772
+          ]
+        ]
+      },
+      {
+        "source_row": 4,
+        "time_s": 3.13,
+        "pairs": [
+          [
+            "left_tool_taccap_left_finger_link",
+            "left_tool_taccap_right_finger_link",
+            -0.006690766037773503
+          ],
+          [
+            "left_tool_taccap_left_finger_link",
+            "left_tool_taccap_right_finger_link",
+            -0.006690765706933739
+          ],
+          [
+            "right_tool_taccap_left_finger_link",
+            "right_tool_taccap_right_finger_link",
+            -0.006690766037773572
+          ],
+          [
+            "right_tool_taccap_left_finger_link",
+            "right_tool_taccap_right_finger_link",
+            -0.0066907657069338045
+          ]
+        ]
+      }
+    ],
+    "joint_velocity_limit_violation_intervals": 394,
+    "joint_velocity_max_rad_s": [
+      24.850679641736143,
+      10.761285571177623,
+      17.554794989094354,
+      11.280164755449219,
+      18.300679391479242,
+      14.549207337988864,
+      16.282970713014365
+    ],
+    "joint_velocity_limit_rad_s": [
+      2.0944,
+      2.0944,
+      2.4435,
+      2.4435,
+      4.8869,
+      4.8869,
+      4.8869
+    ],
+    "left_arm": "held at source platform start pose; no left capture supplied",
+    "gripper": "both Forward-01 grippers held at platform default opening; source opening retained separately, transfer not calibrated",
+    "trajectory_accepted_for_execution": false,
+    "reason": "Candidate coverage audit only; no initial transition or time parameterization, collision coverage incomplete, physical mapping uncalibrated"
+  },
+  "forward01_sources": {
+    "source_root": "/home/xense/src/xense-description",
+    "urdf": "/home/xense/src/xense-description/assets/assemblies/forward-01-flexiv-rizon4s/urdf/forward-01-flexiv-rizon4s-taccap.urdf",
+    "urdf_sha256": "58b88a180c11c38fb9b0ab93d6cb8e5c0fbf457dc0e896929b76b2168d813ceb",
+    "generator": "/home/xense/src/xense-description-sim/tools/build_flexiv_model.py",
+    "generator_sha256": "34984e6ebc6b8bbed7e35abd6e95a99a290869fe2c7e83ee40af33a5a94e1951",
+    "start_pose_sha256": "904457488dfff52dc0ad7a256f5e3888937ba004bad22a6f3714c7701c7fe5c2",
+    "collision_geoms": 44,
+    "limits": [
+      "Only source-declared collision meshes; platform structure has no supplied collision geometry",
+      "MuJoCo convex mesh contact and default parent/weld filtering; not exact mesh clearance",
+      "No mass/friction tuning, actuation or physical calibration; mj_forward only"
+    ]
+  },
+  "hardware": {
+    "insta360_detected": false,
+    "serial_ports": [],
+    "motion_commanded": false,
+    "camera_stream_tested": false,
+    "servo_feedback_tested": false
+  },
+  "artifacts": [
+    {
+      "path": "logs/pretrain-20261117/specialist-sim/replay-overlay.mp4",
+      "bytes": 5385410,
+      "sha256": "2e1b927521afd456396b6f24e7db68cfa24ec48a751d96efb1b92ecc409ac2a8"
+    },
+    {
+      "path": "logs/pretrain-20261117/specialist-sim/episodes/014-right-replay.npz",
+      "bytes": 1202043,
+      "sha256": "a9d8cc6c122e78ac98e7966c8fa2445b5b0d958a0245481be1fae284f7c51998"
+    },
+    {
+      "path": "logs/pretrain-20261117/forward01/forward01-candidates.mp4",
+      "bytes": 1562393,
+      "sha256": "de6e40f28ff50edfdfb52b1ecf94142699f1cf2ef42cd1226055e3d858076fdf"
+    },
+    {
+      "path": "logs/pretrain-20261117/forward01/ik-candidates.npz",
+      "bytes": 1726150,
+      "sha256": "8547aa5609f6b6072893acc0a19af5083c6fd607930bd8891b83f95b907ffdd9"
+    },
+    {
+      "path": "logs/pretrain-20261117/episode014/samples.csv",
+      "bytes": 254142,
+      "sha256": "294c4651ced360689099b85de260809d4910bcccf2e242e00570bdec7da8e624"
+    }
+  ],
+  "quality_checks": {
+    "core_tests": "391 passed, 14 warnings in 13.95s",
+    "causal_and_bounded_ik_tests": "7 passed",
+    "ruff": "passed",
+    "format": "140 files formatted",
+    "mypy": "72 source files passed",
+    "shell_syntax": "passed",
+    "runner": "bash scripts/run_pretrain_checks.sh completed successfully",
+    "replay_session_guard_smoke": "passed with all original 4359 states and no video rerender",
+    "report": "v2026.11.17.rc.2; 45 figures; 390/1280 visual checks passed; main and 5 targeted sections reviewed",
+    "report_links": "passed including local artifacts",
+    "git": "HEAD remains 61190b3; no staged changes, commit or push this turn"
+  }
+}

@@ -133,6 +133,7 @@ module = [
   "specialist_sim", "specialist_sim.*",
   # Optional plotting tools declared by the mamba learning environment.
   "matplotlib", "matplotlib.*",
+  "mujoco", "mujoco.*",
 ]
 ignore_missing_imports = true
 

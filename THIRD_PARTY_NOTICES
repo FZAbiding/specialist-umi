@@ -24,3 +24,9 @@ reports/assets/tag41_12_00000.png is the AprilRobotics tagStandard41h12 ID 0 bit
 Source: https://github.com/AprilRobotics/apriltag-imgs/tree/master/tagStandard41h12
 The corresponding AprilTag family BSD notice is retained in reports/assets/APRILTAG-LICENSE.txt.
 Synthetic teaching figures are generated locally by scripts/demo_apriltag.py.
+
+The tag*-id0.png files are the original AprilRobotics/apriltag-imgs ID 0 PNGs.
+The family gallery and eight bit-layout diagrams and the combined atlas use these bitmaps. The
+project-label figure uses the installed AprilTag codebook. Per-file sources
+and hashes are listed in reports/evidence/tag-families.json. The same AprilTag
+BSD notice above applies.

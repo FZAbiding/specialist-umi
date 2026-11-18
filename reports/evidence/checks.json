@@ -2,9 +2,9 @@
   "date": "2026-11-17",
   "core_suite": {
     "command": "mamba run -n specialist-umi pytest -q",
-    "summary": "384 passed, 14 warnings in 14.48s",
+    "summary": "391 passed, 14 warnings in 13.95s",
     "status": "passed",
-    "log": "logs/learning-20261117/core-tests.log",
+    "log": "logs/pretrain-20261117/core-tests.log",
     "gpu_flow_default_threshold_bytes": 8589934592,
     "threshold_overridden": false
   },
@@ -57,8 +57,8 @@
   },
   "lint": {
     "ruff": "passed",
-    "format": "134 files formatted",
-    "mypy": "67 source files passed",
+    "format": "140 files formatted",
+    "mypy": "72 source files passed",
     "bash_syntax": "passed"
   },
   "real_hardware": {
@@ -69,13 +69,13 @@
     "reason": "Six camera files provided via removable storage; no direct USB stream or servo motion test"
   },
   "report": {
-    "render": "passed v2026.11.17.rc.1; 38 figures; 390/1280 visual checks without problems",
+    "render": "passed v2026.11.17.rc.3; 50 figures, 390/1280 visual checks without problems",
     "sheets_reviewed": 3,
     "verifier": "passed: version, anchors, local links, evidence and figure captions",
     "pdf_exported": false,
     "renderer": "visual-explainer kit/render.mjs",
     "browser": "existing newer Chromium cache via isolated PLAYWRIGHT_BROWSERS_PATH; legacy Chromium134 SVG checker incompatible",
-    "preview_scope": "Main and targeted action, AprilTag, calibration and plan excerpts rendered/reviewed; actual capture photos remain local"
+    "preview_scope": "Main and new family, coordinate-convention and corrected world-projection excerpts reviewed; prior pretrain section evidence retained"
   },
   "artifacts": [
     {
@@ -129,6 +129,15 @@
       "gpu_flow_default_threshold_bytes": 8589934592,
       "threshold_overridden": false,
       "role": "historical; superseded by local geometry additions on 2026-11-17"
+    },
+    {
+      "command": "mamba run -n specialist-umi pytest -q",
+      "summary": "384 passed, 14 warnings in 14.48s",
+      "status": "passed",
+      "log": "logs/learning-20261117/core-tests.log",
+      "gpu_flow_default_threshold_bytes": 8589934592,
+      "threshold_overridden": false,
+      "role": "historical; superseded by causal image and bounded IK tests"
     }
   ],
   "gpu_flow_default_recheck": {
@@ -180,5 +189,13 @@
     "ground_truth_accuracy_validated": false,
     "evidence": "reports/evidence/014-pose-pipeline.json",
     "export_checks": "finite, monotonic timestamps, matrix orthogonality/determinant and CSV readback passed"
+  },
+  "pretrain_checks": "reports/evidence/pretrain-checks.json",
+  "tag_family_and_frame_evidence": "reports/evidence/tag-families.json",
+  "session_review_2026_11_18": {
+    "report_version": "v2026.11.18.rc.3",
+    "evidence": "reports/evidence/bimanual-review.json",
+    "tests": "391 passed, 14 warnings in 13.72s",
+    "log": "logs/delivery-20261118/pytest.log"
   }
 }

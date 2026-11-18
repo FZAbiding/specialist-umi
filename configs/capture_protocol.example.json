@@ -1,0 +1,29 @@
+{
+  "schema": "specialist-capture-protocol-v1",
+  "hands": ["right"],
+  "tag_family": "tagStandard41h12",
+  "anchor_inner_size_m": 0.1,
+  "gripper_inner_size_m": 0.01,
+  "physical_measurements": {
+    "anchor_inner_width_mm": null,
+    "anchor_inner_height_mm": null,
+    "gripper_inner_width_mm": null,
+    "gripper_inner_height_mm": null,
+    "measured_by": null,
+    "measured_at": null
+  },
+  "reference": {"mode": "static_hold", "video_time_s": 1.0, "shared_between_hands": true},
+  "recording": {
+    "mode": "original dual-lens INSV with telemetry",
+    "start": "Already holding the intended initial pose, start recording, keep still near visible fixed anchors for about 1 second",
+    "finish": "Finish the task, tap the gripper as instructed, stop recording immediately",
+    "preserve": ["paired INSV", "audio", "IMU", "offset_v3", "raw file hashes"],
+    "repeat": "Record independent repeated episodes; do not split adjacent frames across evaluation sets"
+  },
+  "review_thresholds": {
+    "translation_speed_m_s": 2.0,
+    "rotation_speed_rad_s": 10.0,
+    "opening_speed_rad_s": 5.0,
+    "meaning": "Engineering review triggers, not calibrated hardware limits; flagged rows are retained"
+  }
+}
